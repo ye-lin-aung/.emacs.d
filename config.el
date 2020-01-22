@@ -22,7 +22,7 @@
 
 ;; all-the-icons (Optional)
 (use-package all-the-icons
-:defer t
+   :defer t
    :ensure t
 )
 
@@ -36,4 +36,20 @@
   :ensure t
   :config
   (global-emojify-mode)
+)
+
+;; Try is useful when i need to test many things
+(use-package try
+   :ensure t
+)
+
+(use-package centaur-tabs
+  :ensure t
+  :demand
+  :bind 
+  ("C-<prior>" . centaur-tabs-backward)
+  ("C-<next>" . centaur-tabs-forward)
+  :config
+  (centaur-tabs-mode t) 
+  (setq centaur-tabs-style "wave")
 )

@@ -12,16 +12,16 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "config.org"
  "init.el"
  "org.org"
  "theme.org"
- "config.org"
  "config.el"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/yelinaung/.emacs.d/" (24103 63245 550765 700000) "./" "../" "org.org~" "theme.org~" "ido.last" "material-design-icons.ttf" "weathericons.ttf" "ido.last~" "all-the-icons.ttf" "file-icons.ttf" "recentf~" "auto-save-list/" "init.el~" "recentf" "theme.org" "config.org" "emojis/" "org.org" "elpa/" "theme.el" "config.el~" "octicons.ttf" "config.el" "config.elc" ".#init.el" "init.el" "fontawesome.ttf" "config.org~")
+ ("/home/yelinaung/.emacs.d/" (24104 137 460765 700000) "./" "../" "org.org~" "theme.org~" "org.el" "ido.last" "material-design-icons.ttf" "weathericons.ttf" "ido.last~" "all-the-icons.ttf" "file-icons.ttf" "recentf~" "auto-save-list/" "init.el~" "recentf" "theme.org" "config.org" "emojis/" "org.org" ".git/" "elpa/" "theme.el" "config.el~" "octicons.ttf" "config.el" ".gitignore" "init.el" "fontawesome.ttf" "config.org~")
 
  ("/home/yelinaung/" (24103 57220 360765 700000) ".dbus/" "./" ".sdkman/" "../" ".pyenv/" ".local/" ".emacs.d/" ".vscode/" "lw/" ".linuxbrew/" ".bashrc" ".viminfo" ".presage/" ".zshrc" ".bash_logout" ".fzf/" ".profile" ".gtkrc-2.0" ".config/" ".wget-hsts" ".gem/" "winhome/" ".pki/" ".firstrun" ".bash_history" ".rbenv/" ".cache/" "go/" ".mozc/" ".icons/" ".vim/" ".cpan/" "emacs/" ".fzf.bash")
 )
