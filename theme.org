@@ -1,0 +1,11 @@
+* My Emacs theme configurations
+** About
+Things about my themes configurations 🎨
+
+#+BEGIN_SRC emacs-lisp
+(unless (package-installed-p 'monokai-theme)
+    (package-refresh-contents)
+    (package-install 'monokai-theme))
+
+(load-theme 'monokai t)
+#+END_SRC

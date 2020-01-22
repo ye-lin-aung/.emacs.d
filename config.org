@@ -1,0 +1,58 @@
+
+#+TITLE: Emacs configuration file
+#+AUTHOR: Ye Lin Aung
+
+
+* About
+This is my customized emacs configurations. I love to upgrade my tools every year. This is the exact same configurations that I am using for my development. Feel free to use or reference.
+Cheers ! 🍺
+
+
+** Use package
+Installation of use-package
+#+BEGIN_SRC emacs-lisp
+(print "Welcome")
+(unless (package-installed-p 'use-package)
+    (package-refresh-contents)
+    (package-install 'use-package))
+#+END_SRC
+
+** Dashboard
+[[https://github.com/emacs-dashboard/emacs-dashboard][Emacs dashboard]]
+#+BEGIN_SRC emacs-lisp
+;; dependencies page-break-links
+(use-package page-break-lines
+ :defer t
+  :ensure t
+  :config
+  )
+  
+;; projectile (Optional)
+(use-package projectile
+ :defer t
+  :ensure t
+  :config
+  (projectile-mode +1)
+  (define-key projectile-mode-map (kbd "s-p") 'projectile-command-map)
+  (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
+)
+
+;; all-the-icons (Optional)
+(use-package all-the-icons
+:defer t
+   :ensure t
+)
+
+;; Dashboard
+(use-package dashboard
+  :ensure t
+  :init
+  (dashboard-setup-startup-hook))
+
+(use-package emojify 
+  :ensure t
+  :config
+  (global-emojify-mode)
+)
+#+END_SRC
+
