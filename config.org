@@ -218,3 +218,13 @@ Swiper must be installed from git master since the melpa package is broken in em
 (define-key global-map (kbd "C-c m") 'vr/mc-mark)
 )
 #+END_SRC
+
+** Go to line preview
+#+BEGIN_SRC emacs-lisp
+(use-package goto-line-preview
+:ensure t
+:config
+(global-set-key (kbd "M-g M-g")  'goto-line-preview)
+
+)
+#+END_SRC

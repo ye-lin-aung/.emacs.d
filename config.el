@@ -20,7 +20,7 @@
   (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
 )
 
-;; all-the-icons (Optional)
+;; all-the-icons (Optional) 
 (use-package all-the-icons
    :defer t
    :ensure t
@@ -125,3 +125,40 @@
 :ensure t)
 (use-package ripgrep
 :ensure t)
+
+(use-package magit
+:ensure t
+)
+
+(use-package sublimity
+:ensure t
+:config 
+(sublimity-mode 1)
+)
+
+(use-package switch-window
+:ensure t
+:config 
+(global-set-key (kbd "C-x o") 'switch-window)
+(global-set-key (kbd "C-x 1") 'switch-window-then-maximize)
+(global-set-key (kbd "C-x 2") 'switch-window-then-split-below)
+(global-set-key (kbd "C-x 3") 'switch-window-then-split-right)
+(global-set-key (kbd "C-x 0") 'switch-window-then-delete)
+
+(global-set-key (kbd "C-x 4 d") 'switch-window-then-dired)
+(global-set-key (kbd "C-x 4 f") 'switch-window-then-find-file)
+(global-set-key (kbd "C-x 4 m") 'switch-window-then-compose-mail)
+(global-set-key (kbd "C-x 4 r") 'switch-window-then-find-file-read-only)
+(global-set-key (kbd "C-x 4 C-f") 'switch-window-then-find-file)
+(global-set-key (kbd "C-x 4 C-o") 'switch-window-then-display-buffer)
+
+(global-set-key (kbd "C-x 4 0") 'switch-window-then-kill-buffer)
+)
+
+(use-package visual-regexp
+:ensure t
+:config
+(define-key global-map (kbd "C-c r") 'vr/replace)
+(define-key global-map (kbd "C-c q") 'vr/query-replace)
+(define-key global-map (kbd "C-c m") 'vr/mc-mark)
+)
