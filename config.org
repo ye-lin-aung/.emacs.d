@@ -40,7 +40,7 @@ Installation of use-package
   (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
 )
 
-;; all-the-icons (Optional)
+;; all-the-icons (Optional) 
 (use-package all-the-icons
    :defer t
    :ensure t
@@ -176,7 +176,15 @@ Swiper must be installed from git master since the melpa package is broken in em
 #+BEGIN_SRC emacs-lisp
 (use-package magit
 :ensure t
- )
+)
+#+END_SRC
+** Sublimity 
+#+BEGIN_SRC emacs-lisp
+(use-package sublimity
+:ensure t
+:config 
+(sublimity-mode 1)
+)
 #+END_SRC
 ** Switch window
 #+BEGIN_SRC emacs-lisp
@@ -193,11 +201,20 @@ Swiper must be installed from git master since the melpa package is broken in em
 (global-set-key (kbd "C-x 4 f") 'switch-window-then-find-file)
 (global-set-key (kbd "C-x 4 m") 'switch-window-then-compose-mail)
 (global-set-key (kbd "C-x 4 r") 'switch-window-then-find-file-read-only)
-
 (global-set-key (kbd "C-x 4 C-f") 'switch-window-then-find-file)
 (global-set-key (kbd "C-x 4 C-o") 'switch-window-then-display-buffer)
 
 (global-set-key (kbd "C-x 4 0") 'switch-window-then-kill-buffer)
 )
+#+END_SRC
 
+** Visual Regex
+#+BEGIN_SRC emacs-lisp
+(use-package visual-regexp
+:ensure t
+:config
+(define-key global-map (kbd "C-c r") 'vr/replace)
+(define-key global-map (kbd "C-c q") 'vr/query-replace)
+(define-key global-map (kbd "C-c m") 'vr/mc-mark)
+)
 #+END_SRC
