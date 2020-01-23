@@ -1,5 +1,6 @@
 
 
+
 #+TITLE: Emacs configuration file
 #+AUTHOR: Ye Lin Aung
 
@@ -83,24 +84,25 @@ Installation of use-package
 Requirements
 sudo apt install elpa-ivy-hydra
 sudo apt install elpa-counsel
-
+Swiper must be installed from git master since the melpa package is broken in emacs 28
 #+BEGIN_SRC emacs-lisp
 (use-package hydra
  :defer t
   :ensure t
 )
 
-(use-package ivy
- :defer t
-  :ensure t
-  :config
-  (ivy-mode 1)
-)
-
+;;(use-package ivy
+;; :defer t
+;;  :ensure t
+;;  :config
+;;  (ivy-mode 1)
+;;)
+(add-to-list 'load-path "~/.emacs.d/vendor/swiper/") 
+(ivy-mode 1)
 (setq ivy-use-virtual-buffers t)
 (setq enable-recursive-minibuffers t)
-;; enable this if you want `swiper' to use it
-;; (setq search-default-mode #'char-fold-to-regexp)
+
+
 (global-set-key "\C-s" 'swiper)
 (global-set-key (kbd "C-c C-r") 'ivy-resume)
 (global-set-key (kbd "<f6>") 'ivy-resume)
@@ -162,5 +164,12 @@ sudo apt install elpa-counsel
 (require 'snails)
 (global-set-key (kbd "C-x p") 'snails)
 
+#+END_SRC
+** RG
+#+BEGIN_SRC emacs-lisp
+(use-package rg
+:ensure t)
+(use-package ripgrep
+:ensure t)
 #+END_SRC
 

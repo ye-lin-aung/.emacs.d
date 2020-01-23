@@ -1,0 +1,3 @@
+[submodule "vendor/swiper"]
+	path = vendor/swiper
+	url = https://github.com/abo-abo/swiper.git

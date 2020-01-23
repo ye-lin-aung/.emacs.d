@@ -61,17 +61,18 @@
   :ensure t
 )
 
-(use-package ivy
- :defer t
-  :ensure t
-  :config
-  (ivy-mode 1)
-)
-
+;;(use-package ivy
+;; :defer t
+;;  :ensure t
+;;  :config
+;;  (ivy-mode 1)
+;;)
+(add-to-list 'load-path "~/.emacs.d/vendor/swiper/") 
+(ivy-mode 1)
 (setq ivy-use-virtual-buffers t)
 (setq enable-recursive-minibuffers t)
-;; enable this if you want `swiper' to use it
-;; (setq search-default-mode #'char-fold-to-regexp)
+
+
 (global-set-key "\C-s" 'swiper)
 (global-set-key (kbd "C-c C-r") 'ivy-resume)
 (global-set-key (kbd "<f6>") 'ivy-resume)
@@ -88,6 +89,10 @@
 (global-set-key (kbd "C-x l") 'counsel-locate)
 (global-set-key (kbd "C-S-o") 'counsel-rhythmbox)
 (define-key minibuffer-local-map (kbd "C-r") 'counsel-minibuffer-history)
+
+(use-package ag
+  :ensure t
+)
 
 (use-package undo-tree
  :defer t
@@ -110,4 +115,13 @@
 )
 
 (use-package focus
+:ensure t)
+
+(add-to-list 'load-path "~/.emacs.d/vendor/snails/") 
+(require 'snails)
+(global-set-key (kbd "C-x p") 'snails)
+
+(use-package rg
+:ensure t)
+(use-package ripgrep
 :ensure t)
