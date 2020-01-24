@@ -25,13 +25,13 @@
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("/home/yelinaung/pw/popdb-analysis/" (24106 45274 819999 100000) "#index.rb#" "./" "../" "index.rb~" "readme.org~" "readme.html" "Gemfile~" "select_id_from_populations.csv" "readme.org" "Gemfile" ".#index.rb" "readme.tex" "Gemfile.lock" ".git/" "index.rb" "Hlaingtharyar Database.zip" "databases/" "summary.csv")
+
  ("/home/" (24098 36933 718365 0) "./" "../" "yelinaung/" "linuxbrew/")
 
  ("/home/yelinaung/" (24106 35847 469999 100000) ".dbus/" "./" ".sdkman/" ".zshrc.pre-oh-my-zsh" "../" ".zsh_history" ".pyenv/" ".local/" ".emacs.d/" ".vscode/" ".bundle/" ".linuxbrew/" ".bashrc" ".viminfo" ".presage/" ".zshrc" ".bash_logout" ".ssh/" ".fzf/" "pw/" ".profile" ".gtkrc-2.0" ".oh-my-zsh/" ".config/" ".wget-hsts" ".gem/" "winhome/" ".pki/" ".firstrun" ".bash_history" ".rbenv/" ".cache/" "go/" ".zcompdump-DESKTOP-FLSHP9Q-5.7.1" ".mozc/" ".gitconfig" ".icons/" ".vim/" ".cpan/" "emacs/" ".fzf.bash")
 
  ("/home/yelinaung/pw/" (24105 50601 225480 800000) "./" "../" "gadi/" "popdb-analysis/")
-
- ("/home/yelinaung/pw/popdb-analysis/" (24106 30117 49999 100000) "./" "../" "index.rb~" "readme.org~" "readme.html" "Gemfile~" "select_id_from_populations.csv" "readme.org" "Gemfile" "readme.tex" "Gemfile.lock" ".git/" ".#readme.org" "index.rb" "#readme.org#" "Hlaingtharyar Database.zip" "databases/")
 
  ("/home/yelinaung/.emacs.d/" (24105 20185 12197 600000) "vendor/" "projectile-bookmarks.eld" "./" "../" "ac-comphist.dat" "org.org~" "theme.org~" "org.el" "ido.last" "material-design-icons.ttf" "weathericons.ttf" "ido.last~" "all-the-icons.ttf" ".gitmodules" "file-icons.ttf" "recentf~" "auto-save-list/" "url/" "init.el~" "recentf" "theme.org" "config.org" "emojis/" "tramp" "transient/" "org.org" ".git/" "elpa/" "theme.el" "langs/" "octicons.ttf" "eshell/" "config.el" ".gitignore" "init.el" "fontawesome.ttf" "config.org~")
 

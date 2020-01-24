@@ -8,4 +8,5 @@
  (docker-container-stop nil)
  (docker-volume-rm nil)
  (magit-commit nil)
- (magit-dispatch nil))
+ (magit-dispatch nil)
+ (magit-push nil))

@@ -2,8 +2,18 @@
 
 ** About 
 I works with ruby a lot. Ruby configurations are a must
+** INF-Ruby
 #+BEGIN_SRC emacs-lisp
 (add-to-list 'load-path "~/.emacs.d/vendor/inf-ruby") 
 (autoload 'inf-ruby-minor-mode "inf-ruby" "Run an inferior Ruby process" t)
 (add-hook 'ruby-mode-hook 'inf-ruby-minor-mode)
+#+END_SRC
+** Projectile rails
+#+BEGIN_SRC emacs-lisp
+(use-package projectile-rails
+:ensure t
+:config
+(projectile-rails-global-mode)
+(define-key projectile-rails-mode-map (kbd "C-c r") 'projectile-rails-command-map)
+)
 #+END_SRC

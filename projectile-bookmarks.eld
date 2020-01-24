@@ -1,1 +1,1 @@
-("~/.emacs.d/" "~/pw/popdb-analysis/" "~/.emacs.d/vendor/misc/fira-code-mode/" "~/.rbenv/" "~/emacs/")
+("~/.emacs.d/" "~/pw/yrg-population-database/" "~/pw/popdb-analysis/" "~/.rbenv/" "~/emacs/")

@@ -1,6 +1,9 @@
 [submodule "vendor/swiper"]
 	path = vendor/swiper
 	url = https://github.com/abo-abo/swiper.git
+[submodule "vendor/snails"]
+	path = vendor/snail
+	url = https://github.com/manateelazycat/snails.git
 [submodule "aweshell"]
 	path = aweshell
 	url = https://github.com/manateelazycat/aweshell

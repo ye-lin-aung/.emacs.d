@@ -4,8 +4,6 @@
   (menu-bar-mode -1)
   (scroll-bar-mode -1))
 
-(setenv "LANG" "mm_MM.UTF-8")
-(setenv "LC_ALL" "mm_MM.UTF-8") 
 
 ;; remove everythig \o/ from default configs
 ;; load packages
@@ -48,7 +46,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(highlight-indent-guides docker sublimity magit switch-window ripgrep helm rg ag focus which-key company-web company auto-complete counsel-projectile undo-tree centaur-tabs org-bullets typo typo-mode olivetti poet-theme emojify use-package quelpa projectile dashboard all-the-icons)))
+   '(helm-dash vimish-fold dumb-jump web-mode projectile-rails cider highlight-indent-guides docker sublimity magit switch-window ripgrep helm rg ag focus which-key company-web company auto-complete counsel-projectile undo-tree centaur-tabs org-bullets typo typo-mode olivetti poet-theme emojify use-package quelpa projectile dashboard all-the-icons)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
