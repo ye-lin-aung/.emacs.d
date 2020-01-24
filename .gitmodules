@@ -4,3 +4,9 @@
 [submodule "aweshell"]
 	path = aweshell
 	url = https://github.com/manateelazycat/aweshell
+[submodule "vendor/company-inf-ruby"]
+	path = vendor/company-inf-ruby
+	url = https://github.com/company-mode/company-inf-ruby
+[submodule "vendor/inf-ruby"]
+	path = vendor/inf-ruby
+	url = https://github.com/nonsequitur/inf-ruby.git

@@ -1,1 +1,11 @@
-nil
+((docker nil)
+ (docker-compose nil)
+ (docker-compose-up nil)
+ (docker-container-ls
+  ("--all")
+  nil)
+ (docker-container-rm nil)
+ (docker-container-stop nil)
+ (docker-volume-rm nil)
+ (magit-commit nil)
+ (magit-dispatch nil))

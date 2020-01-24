@@ -1,3 +1,11 @@
+(org-babel-do-load-languages
+ 'org-babel-load-languages (quote ((emacs-lisp . t)
+                                    (sqlite . t)
+				    (sql .t)
+                                    (R . t)
+                                    (ruby . t)
+                                    (python . t))))
+
 (use-package olivetti
   :ensure t)
 
@@ -16,11 +24,8 @@
   :config
    (olivetti-mode 1)        ;; Centers text in the buffer
    (flyspell-mode 1)        ;; Catch Spelling mistakes
-   (typo-mode 1)            ;; Good for symbols like em-dash
-
    (blink-cursor-mode 0)    ;; Reduce visual noise
    (linum-mode 0)           ;; No line numbers for prose
-
    (setq org-bullets-bullet-list
         '("◉" "○"))
    (org-bullets-mode 1)

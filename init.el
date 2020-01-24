@@ -4,19 +4,19 @@
   (menu-bar-mode -1)
   (scroll-bar-mode -1))
 
-
+(setenv "LANG" "mm_MM.UTF-8")
+(setenv "LC_ALL" "mm_MM.UTF-8") 
 
 ;; remove everythig \o/ from default configs
 ;; load packages
-(load "package")
+
 (package-initialize)
 (when (>= emacs-major-version 24)
   (require 'package)
   (add-to-list
    'package-archives
-   ;; '("melpa" . "http://stable.melpa.org/packages/") ; many packages won't show if using stable
-   '("melpa" . "http://melpa.milkbox.net/packages/")
-   t))
+   '("melpa" . "https://melpa.org/packages/") t
+))
 
 ;; enable ido mode
 (require 'ido)
@@ -48,7 +48,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(sublimity magit switch-window ripgrep helm rg ag focus which-key company-web company auto-complete counsel-projectile undo-tree centaur-tabs org-bullets typo typo-mode olivetti poet-theme emojify use-package quelpa projectile dashboard all-the-icons)))
+   '(highlight-indent-guides docker sublimity magit switch-window ripgrep helm rg ag focus which-key company-web company auto-complete counsel-projectile undo-tree centaur-tabs org-bullets typo typo-mode olivetti poet-theme emojify use-package quelpa projectile dashboard all-the-icons)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -64,7 +64,9 @@
   (org-babel-load-file "~/.emacs.d/config.org")
   (org-babel-load-file "~/.emacs.d/theme.org")
   (org-babel-load-file "~/.emacs.d/org.org")
+  (org-babel-load-file "~/.emacs.d/langs/ruby.org")
   (org-babel-load-file "~/.emacs.d/langs/default.org")
+
 )
 
 ;; Disable that annoying sound that windows beep!
@@ -72,4 +74,4 @@
 
 
 (load-config)
-
+(load "package")

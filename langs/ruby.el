@@ -1,9 +1,3 @@
-* Ruby Lang configurations 
-
-** About 
-I works with ruby a lot. Ruby configurations are a must
-#+BEGIN_SRC emacs-lisp
 (add-to-list 'load-path "~/.emacs.d/vendor/inf-ruby") 
 (autoload 'inf-ruby-minor-mode "inf-ruby" "Run an inferior Ruby process" t)
 (add-hook 'ruby-mode-hook 'inf-ruby-minor-mode)
-#+END_SRC

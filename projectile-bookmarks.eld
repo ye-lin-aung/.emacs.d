@@ -1,1 +1,1 @@
-("~/.emacs.d/" "~/emacs/")
+("~/.emacs.d/" "~/pw/popdb-analysis/" "~/.emacs.d/vendor/misc/fira-code-mode/" "~/.rbenv/" "~/emacs/")

@@ -2,11 +2,15 @@
 
 ;; ----- ido-last-directory-list -----
 (
- ("/home/yelinaung/" . ".emacs.d/")
+ ("/home/yelinaung/pw/" . "popdb-analysis/")
+ ("/home/yelinaung/" . "pw/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/yelinaung/pw/popdb-analysis/"
+ "/home/yelinaung/.linuxbrew/bin/"
+ "/home/yelinaung/"
  "/home/yelinaung/.emacs.d/"
 )
 
@@ -21,9 +25,19 @@
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/yelinaung/.emacs.d/" (24105 13959 882197 600000) "vendor/" "projectile-bookmarks.eld" "./" "../" "ac-comphist.dat" "org.org~" "theme.org~" "org.el" "ido.last" "material-design-icons.ttf" "weathericons.ttf" "ido.last~" "all-the-icons.ttf" ".gitmodules" "file-icons.ttf" "recentf~" "auto-save-list/" "url/" "init.el~" "recentf" "theme.org" "config.org" "emojis/" "transient/" "org.org" ".git/" "elpa/" "theme.el" "langs/" "octicons.ttf" "config.el" ".gitignore" "init.el" "fontawesome.ttf" "config.org~")
+ ("/home/" (24098 36933 718365 0) "./" "../" "yelinaung/" "linuxbrew/")
 
- ("/home/yelinaung/" (24103 57220 360765 700000) ".dbus/" "./" ".sdkman/" "../" ".pyenv/" ".local/" ".emacs.d/" ".vscode/" "lw/" ".linuxbrew/" ".bashrc" ".viminfo" ".presage/" ".zshrc" ".bash_logout" ".fzf/" ".profile" ".gtkrc-2.0" ".config/" ".wget-hsts" ".gem/" "winhome/" ".pki/" ".firstrun" ".bash_history" ".rbenv/" ".cache/" "go/" ".mozc/" ".icons/" ".vim/" ".cpan/" "emacs/" ".fzf.bash")
+ ("/home/yelinaung/" (24106 35847 469999 100000) ".dbus/" "./" ".sdkman/" ".zshrc.pre-oh-my-zsh" "../" ".zsh_history" ".pyenv/" ".local/" ".emacs.d/" ".vscode/" ".bundle/" ".linuxbrew/" ".bashrc" ".viminfo" ".presage/" ".zshrc" ".bash_logout" ".ssh/" ".fzf/" "pw/" ".profile" ".gtkrc-2.0" ".oh-my-zsh/" ".config/" ".wget-hsts" ".gem/" "winhome/" ".pki/" ".firstrun" ".bash_history" ".rbenv/" ".cache/" "go/" ".zcompdump-DESKTOP-FLSHP9Q-5.7.1" ".mozc/" ".gitconfig" ".icons/" ".vim/" ".cpan/" "emacs/" ".fzf.bash")
+
+ ("/home/yelinaung/pw/" (24105 50601 225480 800000) "./" "../" "gadi/" "popdb-analysis/")
+
+ ("/home/yelinaung/pw/popdb-analysis/" (24106 30117 49999 100000) "./" "../" "index.rb~" "readme.org~" "readme.html" "Gemfile~" "select_id_from_populations.csv" "readme.org" "Gemfile" "readme.tex" "Gemfile.lock" ".git/" ".#readme.org" "index.rb" "#readme.org#" "Hlaingtharyar Database.zip" "databases/")
+
+ ("/home/yelinaung/.emacs.d/" (24105 20185 12197 600000) "vendor/" "projectile-bookmarks.eld" "./" "../" "ac-comphist.dat" "org.org~" "theme.org~" "org.el" "ido.last" "material-design-icons.ttf" "weathericons.ttf" "ido.last~" "all-the-icons.ttf" ".gitmodules" "file-icons.ttf" "recentf~" "auto-save-list/" "url/" "init.el~" "recentf" "theme.org" "config.org" "emojis/" "tramp" "transient/" "org.org" ".git/" "elpa/" "theme.el" "langs/" "octicons.ttf" "eshell/" "config.el" ".gitignore" "init.el" "fontawesome.ttf" "config.org~")
+
+ ("/home/yelinaung/.linuxbrew/bin/" (24105 19604 92197 600000) "pl2pm" "db_replicate" "gmkfifo" "gcp" "gtrue" "perlbug" "tic" "gperf" "json_pp" "asn1Parser" "texi2any" "db_hotbackup" "sqlite3" "gsha384sum" "gshuf" "nproc" "gcksum" "unzipsfx" "db_tuner" "gmktemp" "sexp-conv" "cjpeg" "gpr" "gfactor" "base32" "gdf" "pcretest" "ptargrep" "automake" "xzdiff" "brew" "gcsplit" "bzless" "gnutls-certtool" "nettle-pbkdf2" "gsync" "sha256sum" "gnutls-cli-debug" "sha224sum" "gfmt" "gcomm" "gchmod" "aclocal-1.16" "zipdetails" "gbasenc" "captoinfo" "xzfgrep" "gcut" "ptar" "gdircolors" "gbase32" "gdd" "timeout" "xml2ag" "bzcat" "tput" "gtest" "dir" "b2sum" "rg" "msgcat" "python3.7m" "shuf" "hostid" "wheel3" "gls" "lzcmp" "vdir" "texindex" "gtail" "gstdbuf" "db_convert" "lzless" "grealpath" "gpaste" "msgunfmt" "gdbmtool" "god" "infotocap" "pip3.8" "msgfilter" "bzip2" "info" "h2ph" "sha1sum" "sha384sum" "texi2pdf" "gcat" "gettext.sh" "unxz" "md5sum" "perl" "greadlink" "shasum" "libtool" "enc2xs" "nettle-hash" "lzmadec" "gtruncate" "shred" "texi2dvi" "prove" "install-info" "ghead" "gecho" "gyes" "bzmore" "easy_install-3.7" "ifnames" "pcre-config" "infocmp" "pod2text" "runcon" "xzless" "ebrowse" "lzmainfo" "guild" "guile-snarf" "idle3" "ocsptool" "emacsclient" "gptx" "gnproc" "perlthanks" "funzip" "lzcat" "gbase64" "idn2" "nettle-lfib-stream" "gfold" "gjoin" "genv" "pcre2grep" "gruncon" "gexpand" "gnl" "event_rpcgen.py" "gsha224sum" "db_deadlock" "xz" "lzdiff" "ggroups" "gunexpand" "gprintenv" "unlzma" "gsha512sum" "gmkdir" "bzip2recover" "instmodsh" "autoscan" "gsort" "idle3.7" "gnutls-cli" "patch" "grm" ".keepme" "emacs-26.3" "chcon" "encguess" "gtty" "pydoc3" "gtouch" "python3.7-config" "msgconv" "gdbm_dump" "bzdiff" "gstty" "reset" "gpinky" "autoupdate" "gtimeout" "gwho" "p11tool" "zipgrep" "automake-1.16" "pcregrep" "bzgrep" "clear" "gwhoami" "stdbuf" "bunzip2" "db_verify" "gmd5sum" "xsubpp" "djpeg" "toe" "docker-compose" "gtr" "db_dump" "pip3" "db_printlog" "glibtoolize" "gtac" "msguniq" "gbasename" "msgfmt" "glibtool" "corelist" "gln" "psktool" "m4" "gettextize" "xzgrep" "bzegrep" "autoheader" "ncursesw6-config" "wrjpgcom" "guniq" "ngettext" "columns" "xzdec" "xzegrep" "msggrep" "glogname" "recode-sr-latin" "2to3-3.7" "asn1Decoding" "perlivp" "autoreconf" "zsh" "pod2texi" "gseq" "guile-config" "pydoc3.7" "python3" "srptool" "pyvenv" "gnumfmt" "ginstall" "gsum" "libnetcfg" "realpath" "numfmt" "pod2html" "corpus2array" "getdefs" "guile" "gwc" "ncurses6-config" "pkg-config" "gexpr" "gkill" "tabs" "autoopts-config" "cask" "danetool" "xzmore" "h2xs" "gsha1sum" "unzip" "gdirname" "msgcmp" "xml2-config" "gsha256sum" "db_log_verify" "lzma" "easy_install-3.8" "gpathchk" "pcre2test" "dircolors" "envsubst" "pyvenv-3.7" "msginit" "gfalse" "gid" "xzcat" "gnohup" "gdu" "python3.7m-config" "gb2sum" "db_archive" "dbsql" "autopoint" "msgcomm" "pod2usage" "bzfgrep" "autoconf" "gusers" "g[" "pkcs1-conv" "db_upgrade" "makeinfo" "grmdir" "lzfgrep" "bzcmp" "gsplit" "gprintf" "guname" "aclocal" "lzegrep" "jpegtran" "libtoolize" "podselect" "podchecker" "gunlink" "gmknod" "xmlcatalog" "gsleep" "gmv" "gnice" "p11-kit" "gtsort" "sha512sum" "db_load" "xmlwf" "perl5.30.1" "ghostid" "gvdir" "gshred" "pod2man" "db_stat" "gstat" "xzcmp" "gnutls-serv" "xmllint" "gchroot" "guile-tools" "gchgrp" "guptime" "pinky" "lzgrep" "db_checkpoint" "piconv" "msgen" "msgmerge" "perldoc" "tset" "msgattrib" "gdir" "etags" "patchelf" "python3.7" "db_recover" "autom4te" "gpwd" "gdate" "glink" "msgexec" "lzmore" "python3-config" "asn1Coding" "tac" "cpan" "splain" "gettext" "pcre2-config" "gdbm_load" "pdftexi2dvi" "autogen" "pip3.7" "ptx" "sed" "gchown" "ag" "docker" "xgettext" "ptardiff" "zipinfo" "rdjpgcom" "gtee" "gchcon" "truncate" "../" "./")
+
+ ("/home/yelinaung/.emacs.d/vendor/" (24105 15248 32197 600000) "./" "../" "snails/" "swiper/")
 )
 
 ;; ----- ido-unc-hosts-cache -----
