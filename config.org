@@ -27,6 +27,14 @@ Installation of use-package
     (package-install 'use-package))
 #+END_SRC
 
+** Helm Projectile
+#+BEGIN_SRC emacs-lisp
+(use-package helm-projectile
+:ensure t
+:config
+)
+#+END_SRC
+
 ** Dashboard
 [[https://github.com/emacs-dashboard/emacs-dashboard][Emacs dashboard]]
 #+BEGIN_SRC emacs-lisp
@@ -42,9 +50,12 @@ Installation of use-package
  :defer t
   :ensure t
   :config
-  (projectile-mode +1)
+ 
   (define-key projectile-mode-map (kbd "s-p") 'projectile-command-map)
   (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
+  (projectile-global-mode)
+  (setq projectile-completion-system 'helm)
+  (helm-projectile-on)
 )
 
 ;; all-the-icons (Optional) 
@@ -147,15 +158,6 @@ Swiper must be installed from git master since the melpa package is broken in em
 )
 #+END_SRC
 
-** Helm Projectile
-#+BEGIN_SRC emacs-lisp
-(use-package helm-projectile
-:ensure t
-:config
-(helm-projectile-on)
-)
-
-#+END_SRC
 
 ** Which key
 #+BEGIN_SRC emacs-lisp

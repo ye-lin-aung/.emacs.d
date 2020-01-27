@@ -1,1 +1,1 @@
-("~/.emacs.d/" "~/pw/yrg-population-database/" "~/pw/popdb-analysis/" "~/pw/gadi/gadi-web/" "~/.rbenv/" "~/emacs/")
+("~/pw/gadi/gadi-web/" "~/.emacs.d/" "~/pw/yrg-population-database/" "~/pw/popdb-analysis/" "~/.rbenv/" "~/emacs/")

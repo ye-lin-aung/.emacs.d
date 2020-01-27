@@ -5,6 +5,11 @@
     (package-refresh-contents)
     (package-install 'use-package))
 
+(use-package helm-projectile
+:ensure t
+:config
+)
+
 ;; dependencies page-break-links
 (use-package page-break-lines
  :defer t
@@ -17,9 +22,12 @@
  :defer t
   :ensure t
   :config
-  (projectile-mode +1)
+ 
   (define-key projectile-mode-map (kbd "s-p") 'projectile-command-map)
   (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
+  (projectile-global-mode)
+  (setq projectile-completion-system 'helm)
+  (helm-projectile-on)
 )
 
 ;; all-the-icons (Optional) 
@@ -106,12 +114,6 @@
   ("C-x u" . undo-tree-visualizer-diff)
  :config
  (global-undo-tree-mode)
-)
-
-(use-package helm-projectile
-:ensure t
-:config
-(helm-projectile-on)
 )
 
 (use-package which-key
