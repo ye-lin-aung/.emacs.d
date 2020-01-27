@@ -3,6 +3,7 @@
 
 
 
+
 #+TITLE: Emacs configuration file
 #+AUTHOR: Ye Lin Aung
 
@@ -146,12 +147,14 @@ Swiper must be installed from git master since the melpa package is broken in em
 )
 #+END_SRC
 
-** Counsel Projectile
+** Helm Projectile
 #+BEGIN_SRC emacs-lisp
-(use-package counsel-projectile
+(use-package helm-projectile
 :ensure t
 :config
-(define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map))
+(helm-projectile-on)
+)
+
 #+END_SRC
 
 ** Which key
@@ -388,5 +391,24 @@ Swiper must be installed from git master since the melpa package is broken in em
 
 (add-hook 'prog-mode-hook
           #'add-fira-code-symbol-keywords)
+
+#+END_SRC
+** Multi term
+#+BEGIN_SRC emacs-lisp
+(use-package multi-term
+:ensure t
+:config
+(setq multi-term-program "/home/linuxbrew/.linuxbrew/bin/zsh")
+:bind
+("C-c u $" . multi-term)
+("C-c u j" . multi-term-next)
+("C-c u k" . multi-term-prev)
+)
+
+#+END_SRC
+** IBuffer VC
+#+BEGIN_SRC emacs-lisp
+(use-package ibuffer-vc
+:ensure t)
 
 #+END_SRC

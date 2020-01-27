@@ -1,3 +1,4 @@
+
 ;; display graphics
 (when(display-graphic-p)
   (tool-bar-mode -1)
@@ -46,7 +47,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(helm-dash vimish-fold dumb-jump web-mode projectile-rails cider highlight-indent-guides docker sublimity magit switch-window ripgrep helm rg ag focus which-key company-web company auto-complete counsel-projectile undo-tree centaur-tabs org-bullets typo typo-mode olivetti poet-theme emojify use-package quelpa projectile dashboard all-the-icons)))
+   '(ibuffer-vc multi-term helm-dash vimish-fold dumb-jump web-mode projectile-rails cider highlight-indent-guides docker sublimity magit switch-window ripgrep helm rg ag focus which-key company-web company auto-complete counsel-projectile undo-tree centaur-tabs org-bullets typo typo-mode olivetti poet-theme emojify use-package quelpa projectile dashboard all-the-icons)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -71,5 +72,6 @@
 (setq visible-bell 1)
 
 
+(global-set-key (kbd "C-x C-b") 'ibuffer)
 (load-config)
 (load "package")

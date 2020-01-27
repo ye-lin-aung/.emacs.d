@@ -108,10 +108,11 @@
  (global-undo-tree-mode)
 )
 
-(use-package counsel-projectile
+(use-package helm-projectile
 :ensure t
 :config
-(define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map))
+(helm-projectile-on)
+)
 
 (use-package which-key
    :ensure t
@@ -319,3 +320,16 @@
 
 (add-hook 'prog-mode-hook
           #'add-fira-code-symbol-keywords)
+
+(use-package multi-term
+:ensure t
+:config
+(setq multi-term-program "/home/linuxbrew/.linuxbrew/bin/zsh")
+:bind
+("C-c u $" . multi-term)
+("C-c u j" . multi-term-next)
+("C-c u k" . multi-term-prev)
+)
+
+(use-package ibuffer-vc
+:ensure t)
