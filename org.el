@@ -1,8 +1,10 @@
+(add-to-list 'load-path "~/.emacs.d/vendor/ob-restclient/") 
 (org-babel-do-load-languages
  'org-babel-load-languages (quote ((emacs-lisp . t)
                                     (sqlite . t)
 				    (sql .t)
                                     (R . t)
+				    (restclient . t)
                                     (ruby . t)
                                     (python . t))))
 

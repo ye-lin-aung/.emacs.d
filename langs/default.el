@@ -50,3 +50,20 @@
 :ensure t)
 (use-package helm-dash
 :ensure t)
+
+(use-package flycheck
+  :ensure t
+  :init (global-flycheck-mode))
+(add-hook 'after-init-hook #'global-flycheck-mode)
+
+(use-package highlight-parentheses
+:ensure t
+:init
+(add-hook 'prog-mode-hook 'highlight-parentheses-mode)
+)
+
+(use-package restclient
+:ensure t
+:config
+(add-to-list 'auto-mode-alist '("\\.http\\'" . restclient-mode))
+)

@@ -8,17 +8,19 @@
 
 ;; ----- ido-work-directory-list -----
 (
- "/home/yelinaung/pw/popdb-analysis/"
+ "/home/yelinaung/pw/yrg-population-database/"
  "/home/yelinaung/.emacs.d/"
+ "/home/yelinaung/pw/"
+ "/home/yelinaung/pw/popdb-analysis/"
  "/home/yelinaung/.linuxbrew/bin/"
  "/home/yelinaung/"
 )
 
 ;; ----- ido-work-file-list -----
 (
+ "config.org"
  "Gemfile"
  "init.el"
- "config.org"
  "org.org"
  "theme.org"
  "config.el"
@@ -26,13 +28,15 @@
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/yelinaung/" (24106 61837 427751 100000) ".dbus/" "./" ".sdkman/" ".zshrc.pre-oh-my-zsh" "../" ".zsh_history" ".pyenv/" ".local/" ".emacs.d/" ".vscode/" ".bundle/" ".linuxbrew/" ".bashrc" "fira-code-emacs/" ".viminfo" ".presage/" ".zshrc" ".bash_logout" ".ssh/" ".fzf/" "pw/" ".profile" ".gtkrc-2.0" ".oh-my-zsh/" ".config/" ".wget-hsts" ".gem/" "winhome/" ".pki/" ".firstrun" ".bash_history" ".rbenv/" ".cache/" ".zcompdump-DESKTOP-FLSHP9Q-5.7.1" ".mozc/" ".gitconfig" ".icons/" ".vim/" ".cpan/" "emacs/" ".fzf.bash")
+ ("/home/yelinaung/pw/yrg-population-database/" (24114 33704 817792 900000) "vendor/" "./" "log/" "../" "clean.sh" "tmp/" "export.sql" "rest.http~" "test_export.txt" "voter_apps/" "migrations/" "public/" "bin/" "import.sql.erb" "test/" "Rakefile" "rest.http" "app/" "Gemfile" "config/" ".ruby-version" "lib/" "init.sql" "db/" "Gemfile.lock" ".git/" "text.log" "scaffold.txt" "README.md" "docker-compose.yml" "package.json" ".gitignore" "storage/" "data/" "import.sql" "config.ru")
 
- ("/home/yelinaung/.emacs.d/" (24106 56507 747751 100000) "vendor/" "#init.el#" "projectile-bookmarks.eld" "./" "../" "ac-comphist.dat" "org.org~" "theme.org~" "org.el" "ido.last" "material-design-icons.ttf" "weathericons.ttf" "ido.last~" "all-the-icons.ttf" ".gitmodules" "file-icons.ttf" "recentf~" "auto-save-list/" "url/" "init.el~" "recentf" "theme.org" "config.org" "emojis/" "tramp" "transient/" "org.org" ".git/" "config.org_archive" "elpa/" "theme.el" "langs/" "octicons.ttf" "eshell/" "config.el" ".gitignore" "init.el" "fontawesome.ttf" "config.org~")
+ ("/home/yelinaung/.emacs.d/" (24112 33189 275661 100000) "vendor/" "#init.el#" "projectile-bookmarks.eld" "./" "../" "ac-comphist.dat" "org.org~" "theme.org~" "org.el" "ido.last" "material-design-icons.ttf" "weathericons.ttf" "ido.last~" "all-the-icons.ttf" ".gitmodules" "file-icons.ttf" "recentf~" "auto-save-list/" "url/" "init.el~" "recentf" "theme.org" "config.org" "emojis/" "tramp" "transient/" "org.org" ".git/" "config.org_archive" "elpa/" "theme.el" "langs/" "octicons.ttf" "eshell/" "config.el" ".gitignore" "wall.jpg" "init.el" "fontawesome.ttf" "config.org~")
 
- ("/home/yelinaung/pw/popdb-analysis/" (24106 52220 649999 100000) "./" "../" "index.rb~" "readme.org~" "readme.html" "Gemfile~" "select_id_from_populations.csv" "readme.org" "Gemfile" "readme.tex" "Gemfile.lock" ".git/" "index.rb" "Hlaingtharyar Database.zip" "databases/" "summary.csv")
+ ("/home/yelinaung/" (24112 33127 725661 100000) ".dbus/" "./" ".sdkman/" ".zshrc.pre-oh-my-zsh" "../" ".zsh_history" ".pyenv/" ".local/" ".emacs.d/" ".vscode/" ".bundle/" ".tmux.conf.local" ".linuxbrew/" ".bashrc" "fira-code-emacs/" ".viminfo" ".presage/" ".zshrc" ".bash_logout" ".ssh/" ".fzf/" "pw/" ".profile" ".gtkrc-2.0" ".oh-my-zsh/" ".config/" ".wget-hsts" ".gem/" ".tmux.conf" "winhome/" ".pki/" ".tmux/" ".firstrun" ".bash_history" ".rbenv/" ".cache/" ".zcompdump-DESKTOP-FLSHP9Q-5.7.1" ".mozc/" ".gitconfig" ".icons/" ".vim/" ".cpan/" "emacs/" ".fzf.bash")
 
- ("/home/yelinaung/pw/" (24106 45552 419999 100000) "./" "../" "gadi/" "FiraCode-Regular-Symbol.otf" "popdb-analysis/" "yrg-population-database/" "FiraCode-Regular-Symbol(1).zip:Zone.Identifier")
+ ("/home/yelinaung/pw/" (24112 25277 825661 100000) "./" "../" "mental/" "gadi/" "FiraCode-Regular-Symbol.otf" "popdb-analysis/" "pemas/" "yrg-population-database/" "sspms/" "FiraCode-Regular-Symbol(1).zip:Zone.Identifier" "id_rsa" "medical/" "id_rsa.pub")
+
+ ("/home/yelinaung/pw/popdb-analysis/" (24112 32517 175661 100000) "./" "../" "readme.org~" "readme.html" "Gemfile~" "readme.org" "Gemfile" "readme.tex" "Gemfile.lock" ".git/" "index.rb" "utf-8-summary.csv" "Hlaingtharyar Database.zip" "databases/" "summary.csv")
 
  ("/home/" (24098 36933 718365 0) "./" "../" "yelinaung/" "linuxbrew/")
 

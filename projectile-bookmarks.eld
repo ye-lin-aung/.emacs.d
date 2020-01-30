@@ -1,1 +1,1 @@
-("~/pw/gadi/gadi-web/" "~/.emacs.d/" "~/pw/yrg-population-database/" "~/pw/popdb-analysis/" "~/.rbenv/" "~/emacs/")
+("~/.emacs.d/" "~/pw/yrg-population-database/" "~/pw/medical/" "~/pw/gadi/gadi-web/" "~/emacs/" "~/pw/sspms/" "~/pw/popdb-analysis/" "~/pw/mental/" "~/.rbenv/")

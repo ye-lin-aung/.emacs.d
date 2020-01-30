@@ -10,6 +10,11 @@
 :config
 )
 
+(use-package helm-ag
+:ensure t
+:config
+)
+
 ;; dependencies page-break-links
 (use-package page-break-lines
  :defer t
@@ -35,6 +40,7 @@
    :ensure t
 )
 
+
 ;; Dashboard
 (use-package dashboard
   :ensure t
@@ -42,6 +48,7 @@
 (setq dashboard-banner-logo-title "Welcome to Ye's Dashboard")
 (setq dashboard-set-heading-icons t)
 (setq dashboard-set-file-icons t)
+(setq dashboard-startup-banner "~/.emac.d/wall.png")
   :init
   (dashboard-setup-startup-hook))
 
@@ -335,3 +342,8 @@
 
 (use-package ibuffer-vc
 :ensure t)
+
+(use-package avy
+:ensure t
+:config
+(global-set-key (kbd "C-;") 'avy-goto-char))

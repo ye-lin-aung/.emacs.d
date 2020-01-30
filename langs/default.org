@@ -51,7 +51,7 @@
 #+END_SRC
 #+RESULTS:
 : t
-** Origami
+** Vimish-fold
 #+BEGIN_SRC emacs-lisp
 (use-package vimish-fold
 :ensure t
@@ -67,4 +67,27 @@
 (use-package helm-dash
 :ensure t)
 #+END_SRC
+** Fly Check
+#+BEGIN_SRC emacs-lisp
+(use-package flycheck
+  :ensure t
+  :init (global-flycheck-mode))
+(add-hook 'after-init-hook #'global-flycheck-mode)
+#+END_SRC
 
+** Hightlight paranthesis
+#+BEGIN_SRC emacs-lisp
+(use-package highlight-parentheses
+:ensure t
+:init
+(add-hook 'prog-mode-hook 'highlight-parentheses-mode)
+)
+#+END_SRC
+** REST Client
+#+BEGIN_SRC emacs-lisp
+(use-package restclient
+:ensure t
+:config
+(add-to-list 'auto-mode-alist '("\\.http\\'" . restclient-mode))
+)
+#+END_SRC

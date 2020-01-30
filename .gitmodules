@@ -13,3 +13,6 @@
 [submodule "vendor/inf-ruby"]
 	path = vendor/inf-ruby
 	url = https://github.com/nonsequitur/inf-ruby.git
+[submodule "vendor/ob-restclient"]
+	path = vendor/ob-restclient
+	url = https://github.com/alf/ob-restclient.el.git
