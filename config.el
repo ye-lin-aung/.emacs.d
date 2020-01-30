@@ -72,9 +72,11 @@
   ("C-c t s" . centaur-tabs-counsel-switch-group)
   ("C-c t p" . centaur-tabs-group-by-projectile-project)
   :config
+  
   (centaur-tabs-mode t) 
-  (setq centaur-tabs-style "wave")
+  (setq centaur-tabs-style "alternate")
 )
+(add-hook 'term-mode-hook 'centaur-tabs-local-mode)
 
 (use-package hydra
  :defer t
@@ -347,3 +349,9 @@
 :ensure t
 :config
 (global-set-key (kbd "C-;") 'avy-goto-char))
+
+(use-package elscreen
+:ensure t
+:config
+(elscreen-start)
+)

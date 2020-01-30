@@ -1,4 +1,4 @@
-#+TITLE: Emacs configuration file
+\#+TITLE: Emacs configuration file
 #+AUTHOR: Ye Lin Aung
 
 
@@ -94,10 +94,11 @@ Installation of use-package
   ("C-c t s" . centaur-tabs-counsel-switch-group)
   ("C-c t p" . centaur-tabs-group-by-projectile-project)
   :config
+  
   (centaur-tabs-mode t) 
-  (setq centaur-tabs-style "wave")
+  (setq centaur-tabs-style "alternate")
 )
-
+(add-hook 'term-mode-hook 'centaur-tabs-local-mode)
 
 
 #+END_SRC

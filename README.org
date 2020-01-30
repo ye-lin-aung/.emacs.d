@@ -1,0 +1,6 @@
+* Emacs configs
+This is the emacs configs I have been using for my work. I ditched my old configs which was based on doomacs and recreated everything from scratch. I decided to add only packages that I am currently using so there may be missing modes for many other languages for now. But the configs will grow eventually. Still wip
+
+#+CAPTION: My Setup
+#+NAME:   fig:SED-HR4049
+[[./img/setup.PNG]]
