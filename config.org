@@ -1,8 +1,8 @@
-\#+TITLE: Emacs configuration file
+#+TITLE: Emacs configuration file
 #+AUTHOR: Ye Lin Aung
 
 
-* About
+n* About
 
 This is my customized emacs configurations. I love to upgrade my tools every year. This is the exact same configurations that I am using for my development. Feel free to use or reference.
 Cheers ! 🍺
@@ -70,7 +70,7 @@ Installation of use-package
 (setq dashboard-banner-logo-title "Welcome to Ye's Dashboard")
 (setq dashboard-set-heading-icons t)
 (setq dashboard-set-file-icons t)
-(setq dashboard-startup-banner "~/.emac.d/wall.png")
+(setq dashboard-startup-banner "wall.png")
   :init
   (dashboard-setup-startup-hook))
 
@@ -99,7 +99,7 @@ Installation of use-package
   (setq centaur-tabs-style "alternate")
 )
 (add-hook 'term-mode-hook 'centaur-tabs-local-mode)
-
+(add-hook 'eshell-mode-hook 'centaur-tabs-local-mode)
 
 #+END_SRC
 
@@ -396,18 +396,25 @@ Swiper must be installed from git master since the melpa package is broken in em
           #'add-fira-code-symbol-keywords)
 
 #+END_SRC
-** Multi term
+** Multi term & Eshell
 #+BEGIN_SRC emacs-lisp
 (use-package multi-term
 :ensure t
 :config
 (setq multi-term-program "/home/linuxbrew/.linuxbrew/bin/zsh")
 :bind
-("C-c u $" . multi-term)
 ("C-c u j" . multi-term-next)
 ("C-c u k" . multi-term-prev)
 )
-
+(defalias 'open 'find-file)
+(defalias 'openo 'find-file-other-window)
+;; New Eshell
+(global-set-key (kbd "C-c u $") 
+(defun eshell-new()
+  "Open a new instance of eshell."
+  (interactive)
+  (eshell 'N))
+)
 #+END_SRC
 ** IBuffer VC
 #+BEGIN_SRC emacs-lisp
@@ -432,4 +439,40 @@ Swiper must be installed from git master since the melpa package is broken in em
 )
 #+END_SRC
 
+** LSP mode-
+#+BEGIN_SRC emacs-lisp
+(use-package lsp-mode
+  ;; set prefix for lsp-command-keymap (few alternatives - "C-l", "C-c l")
+  :init (setq lsp-keymap-prefix "C-c l")
+  :hook (;; replace XXX-mode with concrete major-mode(e. g. python-mode)
+         (prog-mode . lsp)
+         ;; if you want which-key integration
+         (lsp-mode . lsp-enable-which-key-integration))
+  :commands lsp)
 
+;; optionally
+(use-package lsp-ui
+:ensure t
+ :commands lsp-ui-mode)
+(use-package company-lsp 
+:ensure t
+:commands company-lsp)
+
+;; if you are ivy user
+(use-package treemacs
+:ensure t)
+
+(use-package lsp-ivy
+:ensure t
+ :commands lsp-ivy-workspace-symbol)
+(use-package lsp-treemacs 
+:ensure t
+:commands lsp-treemacs-errors-list)
+
+;; optionally if you want to use debugger
+;;(use-package dap-mode)
+;; (use-package dap-LANGUAGE) to load the dap adapter for your language
+
+;; optional if you want which-key integration
+
+#+END_SRC

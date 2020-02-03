@@ -48,7 +48,7 @@
 (setq dashboard-banner-logo-title "Welcome to Ye's Dashboard")
 (setq dashboard-set-heading-icons t)
 (setq dashboard-set-file-icons t)
-(setq dashboard-startup-banner "~/.emac.d/wall.png")
+(setq dashboard-startup-banner "wall.png")
   :init
   (dashboard-setup-startup-hook))
 
@@ -77,6 +77,7 @@
   (setq centaur-tabs-style "alternate")
 )
 (add-hook 'term-mode-hook 'centaur-tabs-local-mode)
+(add-hook 'eshell-mode-hook 'centaur-tabs-local-mode)
 
 (use-package hydra
  :defer t
@@ -337,9 +338,17 @@
 :config
 (setq multi-term-program "/home/linuxbrew/.linuxbrew/bin/zsh")
 :bind
-("C-c u $" . multi-term)
 ("C-c u j" . multi-term-next)
 ("C-c u k" . multi-term-prev)
+)
+(defalias 'open 'find-file)
+(defalias 'openo 'find-file-other-window)
+;; New Eshell
+(global-set-key (kbd "C-c u $") 
+(defun eshell-new()
+  "Open a new instance of eshell."
+  (interactive)
+  (eshell 'N))
 )
 
 (use-package ibuffer-vc
@@ -355,3 +364,37 @@
 :config
 (elscreen-start)
 )
+
+(use-package lsp-mode
+  ;; set prefix for lsp-command-keymap (few alternatives - "C-l", "C-c l")
+  :init (setq lsp-keymap-prefix "C-c l")
+  :hook (;; replace XXX-mode with concrete major-mode(e. g. python-mode)
+         (prog-mode . lsp)
+         ;; if you want which-key integration
+         (lsp-mode . lsp-enable-which-key-integration))
+  :commands lsp)
+
+;; optionally
+(use-package lsp-ui
+:ensure t
+ :commands lsp-ui-mode)
+(use-package company-lsp 
+:ensure t
+:commands company-lsp)
+
+;; if you are ivy user
+(use-package treemacs
+:ensure t)
+
+(use-package lsp-ivy
+:ensure t
+ :commands lsp-ivy-workspace-symbol)
+(use-package lsp-treemacs 
+:ensure t
+:commands lsp-treemacs-errors-list)
+
+;; optionally if you want to use debugger
+;;(use-package dap-mode)
+;; (use-package dap-LANGUAGE) to load the dap adapter for your language
+
+;; optional if you want which-key integration
