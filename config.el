@@ -48,7 +48,7 @@
 (setq dashboard-banner-logo-title "Welcome to Ye's Dashboard")
 (setq dashboard-set-heading-icons t)
 (setq dashboard-set-file-icons t)
-(setq dashboard-startup-banner "wall.png")
+(setq dashboard-startup-banner "~/.emacs.d/wall.png")
   :init
   (dashboard-setup-startup-hook))
 
@@ -341,8 +341,9 @@
 ("C-c u j" . multi-term-next)
 ("C-c u k" . multi-term-prev)
 )
-(defalias 'open 'find-file)
-(defalias 'openo 'find-file-other-window)
+
+(defalias 'ff 'find-file)
+(defalias 'ffo 'find-file-other-window)
 ;; New Eshell
 (global-set-key (kbd "C-c u $") 
 (defun eshell-new()

@@ -1,5 +1,5 @@
-(unless (package-installed-p 'monokai-theme)
+(unless (package-installed-p 'gruvbox-theme)
     (package-refresh-contents)
-    (package-install 'monokai-theme))
+    (package-install 'gruvbox-theme))
 
-(load-theme 'monokai t)
+(load-theme 'gruvbox-dark-hard t)

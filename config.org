@@ -1,8 +1,7 @@
 #+TITLE: Emacs configuration file
 #+AUTHOR: Ye Lin Aung
 
-
-n* About
+* About
 
 This is my customized emacs configurations. I love to upgrade my tools every year. This is the exact same configurations that I am using for my development. Feel free to use or reference.
 Cheers ! 🍺
@@ -70,7 +69,7 @@ Installation of use-package
 (setq dashboard-banner-logo-title "Welcome to Ye's Dashboard")
 (setq dashboard-set-heading-icons t)
 (setq dashboard-set-file-icons t)
-(setq dashboard-startup-banner "wall.png")
+(setq dashboard-startup-banner "~/.emacs.d/wall.png")
   :init
   (dashboard-setup-startup-hook))
 
@@ -406,8 +405,9 @@ Swiper must be installed from git master since the melpa package is broken in em
 ("C-c u j" . multi-term-next)
 ("C-c u k" . multi-term-prev)
 )
-(defalias 'open 'find-file)
-(defalias 'openo 'find-file-other-window)
+
+(defalias 'ff 'find-file)
+(defalias 'ffo 'find-file-other-window)
 ;; New Eshell
 (global-set-key (kbd "C-c u $") 
 (defun eshell-new()
