@@ -41,4 +41,9 @@ My org related configurations sit here
 ;;                (variable-pitch-mode 1)))
 
 ;;)
+
+(use-package org-download
+:ensure t 
+(add-hook 'dired-mode-hook 'org-download-enable)
+)
 #+END_SRC 
