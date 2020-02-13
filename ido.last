@@ -8,10 +8,10 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/yelinaung/.emacs.d/"
  "/home/yelinaung/pw/intro-to-CloudFormation_AC/02 CloudFormation Features/"
  "/home/yelinaung/pw/python-practise/99-python-exercise/"
  "/home/yelinaung/pw/gadi/gadi-web/app/controllers/dashboard/"
- "/home/yelinaung/.emacs.d/"
  "/home/yelinaung/pw/yrg-population-database/"
  "/home/yelinaung/pw/"
  "/home/yelinaung/pw/popdb-analysis/"
@@ -31,9 +31,9 @@
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/yelinaung/" (24130 25567 955403 200000) ".dbus/" "./" ".sdkman/" ".zshrc.pre-oh-my-zsh" "../" ".zsh_history" ".pyenv/" ".yarn/" ".local/" ".emacs.d/" ".vscode/" ".bundle/" "offlineimap-7.3.2/" ".tmux.conf.local" ".linuxbrew/" ".bashrc" ".solargraph/" "fira-code-emacs/" ".viminfo" ".zprofile" ".presage/" ".zshrc" ".sqlite_history" ".yarnrc" ".bash_logout" ".ssh/" ".fzf/" "pw/" ".profile" ".gtkrc-2.0" ".docker/" ".oh-my-zsh/" ".config/" ".cargo/" ".wget-hsts" ".gem/" ".tmux.conf" "winhome/" ".pki/" ".tmux/" ".firstrun" ".saves/" ".bash_history" ".rbenv/" ".cache/" "go/" ".zcompdump-DESKTOP-FLSHP9Q-5.7.1" "v7.3.2.tar.gz" ".node-gyp/" ".mozc/" ".gitconfig" ".icons/" ".vim/" ".cpan/" "emacs/" ".fzf.bash" ".npm/" ".rustup/" ".python_history")
+ ("/home/yelinaung/.emacs.d/" (24132 62665 328456 900000) "vendor/" "#init.el#" "projectile-bookmarks.eld" "./" "vimish-fold/" "../" "img/" "ac-comphist.dat" "wall(1).png:Zone.Identifier" "org.org~" "theme.org~" "org.el" "ido.last" "material-design-icons.ttf" "#org.org#" ".lsp-session-v1" "weathericons.ttf" "ido.last~" "all-the-icons.ttf" ".gitmodules" "file-icons.ttf" "recentf~" "auto-save-list/" "README.org" "url/" "init.el~" "recentf" "theme.org" ".#org.org" "config.org" "README.org~" "emojis/" "tramp" "transient/" "org.org" ".git/" "config.org_archive" "elpa/" "wall.png" "theme.el" "langs/" "octicons.ttf" "eshell/" "config.el" ".gitignore" "init.el" "fontawesome.ttf" "config.org~")
 
- ("/home/yelinaung/.emacs.d/" (24130 25508 485403 200000) "vendor/" "#init.el#" "projectile-bookmarks.eld" "./" "vimish-fold/" "../" "img/" "ac-comphist.dat" "wall(1).png:Zone.Identifier" "org.org~" "theme.org~" "org.el" "ido.last" "material-design-icons.ttf" ".lsp-session-v1" "weathericons.ttf" "ido.last~" "all-the-icons.ttf" ".gitmodules" "file-icons.ttf" "recentf~" "auto-save-list/" "README.org" "url/" "init.el~" "recentf" "theme.org" "config.org" "README.org~" "emojis/" "tramp" "transient/" "org.org" ".git/" "config.org_archive" "elpa/" "wall.png" "theme.el" "langs/" "octicons.ttf" "eshell/" "config.el" ".gitignore" "init.el" "fontawesome.ttf" "config.org~")
+ ("/home/yelinaung/" (24130 25567 955403 200000) ".dbus/" "./" ".sdkman/" ".zshrc.pre-oh-my-zsh" "../" ".zsh_history" ".pyenv/" ".yarn/" ".local/" ".emacs.d/" ".vscode/" ".bundle/" "offlineimap-7.3.2/" ".tmux.conf.local" ".linuxbrew/" ".bashrc" ".solargraph/" "fira-code-emacs/" ".viminfo" ".zprofile" ".presage/" ".zshrc" ".sqlite_history" ".yarnrc" ".bash_logout" ".ssh/" ".fzf/" "pw/" ".profile" ".gtkrc-2.0" ".docker/" ".oh-my-zsh/" ".config/" ".cargo/" ".wget-hsts" ".gem/" ".tmux.conf" "winhome/" ".pki/" ".tmux/" ".firstrun" ".saves/" ".bash_history" ".rbenv/" ".cache/" "go/" ".zcompdump-DESKTOP-FLSHP9Q-5.7.1" "v7.3.2.tar.gz" ".node-gyp/" ".mozc/" ".gitconfig" ".icons/" ".vim/" ".cpan/" "emacs/" ".fzf.bash" ".npm/" ".rustup/" ".python_history")
 
  ("/home/yelinaung/pw/intro-to-CloudFormation_AC/02 CloudFormation Features/" (24125 41242 975523 400000) "./" "../" "2-MultipleResources.yaml" "1-IntrinsicFunctions.yaml" "6-Output.yaml" "5-InputParameters.yaml" "4-Mappings.yaml" "0-SimpleExample.yaml" "3-PseudoParameters.yaml")
 

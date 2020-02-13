@@ -440,6 +440,7 @@ Swiper must be installed from git master since the melpa package is broken in em
 #+END_SRC
 
 ** LSP mode-
+
 #+BEGIN_SRC emacs-lisp
 (use-package lsp-mode
   ;; set prefix for lsp-command-keymap (few alternatives - "C-l", "C-c l")
@@ -475,4 +476,23 @@ Swiper must be installed from git master since the melpa package is broken in em
 
 ;; optional if you want which-key integration
 
+#+END_SRC
+** Eshell Up
+#+BEGIN_SRC emacs-lisp
+(use-package eshell-up
+:ensure t
+)
+(defalias 'up 'eshell-up)
+(defalias 'pk 'eshell-up-peek)
+#+END_SRC
+
+#+RESULTS:
+** Eshell auto suggest
+#+BEGIN_SRC emacs-lisp
+(use-package esh-autosuggest
+  :hook (eshell-mode . esh-autosuggest-mode)
+  ;; If you have use-package-hook-name-suffix set to nil, uncomment and use the
+  ;; line below instead:
+  ;;:hook (eshell-mode-hook . esh-autosuggest-mode)
+  :ensure t)
 #+END_SRC

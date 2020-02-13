@@ -399,3 +399,16 @@
 ;; (use-package dap-LANGUAGE) to load the dap adapter for your language
 
 ;; optional if you want which-key integration
+
+(use-package eshell-up
+:ensure t
+)
+(defalias 'up 'eshell-up)
+(defalias 'pk 'eshell-up-peek)
+
+(use-package esh-autosuggest
+  :hook (eshell-mode . esh-autosuggest-mode)
+  ;; If you have use-package-hook-name-suffix set to nil, uncomment and use the
+  ;; line below instead:
+  ;;:hook (eshell-mode-hook . esh-autosuggest-mode)
+  :ensure t)

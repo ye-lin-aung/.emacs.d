@@ -1,3 +1,4 @@
+
 * Org mode configurations
 ** About
 My org related configurations sit here
@@ -44,6 +45,7 @@ My org related configurations sit here
 
 (use-package org-download
 :ensure t 
+:config
 (add-hook 'dired-mode-hook 'org-download-enable)
 )
 #+END_SRC 
