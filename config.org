@@ -496,3 +496,18 @@ Swiper must be installed from git master since the melpa package is broken in em
   ;;:hook (eshell-mode-hook . esh-autosuggest-mode)
   :ensure t)
 #+END_SRC
+** Powerline
+#+BEGIN_SRC emacs-lisp
+(require 'cl)
+(use-package telephone-line
+:ensure t
+:config
+(telephone-line-mode 1)
+(setq telephone-line-subseparator-faces '())
+(setq telephone-line-height 24
+      telephone-line-evil-use-short-tag t)
+
+)
+#+END_SRC
+
+#+RESULTS:
