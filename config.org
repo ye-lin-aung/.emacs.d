@@ -20,18 +20,7 @@ Installation of use-package
     (package-install 'use-package))
 #+END_SRC
 
-** Helm Projectile
-#+BEGIN_SRC emacs-lisp
-(use-package helm-projectile
-:ensure t
-:config
-)
 
-(use-package helm-ag
-:ensure t
-:config
-)
-#+END_SRC
 
 ** Dashboard
 [[https://github.com/emacs-dashboard/emacs-dashboard][Emacs dashboard]]
@@ -48,12 +37,9 @@ Installation of use-package
  :defer t
   :ensure t
   :config
- 
-  (define-key projectile-mode-map (kbd "s-p") 'projectile-command-map)
   (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
   (projectile-global-mode)
-  (setq projectile-completion-system 'helm)
-  (helm-projectile-on)
+;;  (setq projectile-completion-system 'helm)
 )
 
 ;; all-the-icons (Optional) 
@@ -496,7 +482,7 @@ Swiper must be installed from git master since the melpa package is broken in em
   ;;:hook (eshell-mode-hook . esh-autosuggest-mode)
   :ensure t)
 #+END_SRC
-** Powerline
+** Telephone Line
 #+BEGIN_SRC emacs-lisp
 (require 'cl)
 (use-package telephone-line
@@ -509,5 +495,43 @@ Swiper must be installed from git master since the melpa package is broken in em
 
 )
 #+END_SRC
+** Perspective Mode
+#+BEGIN_SRC emacs-lisp
+(use-package perspective
+:ensure t
+:config
 
-#+RESULTS:
+(persp-mode)
+)
+
+#+END_SRC
+
+** Counsel Projectile
+#+BEGIN_SRC emacs-lisp
+(use-package counsel-projectile
+:ensure t
+:config 
+(counsel-projectile-mode)
+)
+(use-package persp-projectile
+  :after (perspective)
+  :ensure t
+  :bind
+)
+(global-set-key (kbd "C-x C-b") 'persp-ivy-switch-buffer)
+#+END_SRC
+** Zoom
+#+BEGIN_SRC emacs-lisp
+(use-package zoom
+:ensure t
+:config 
+(zoom-mode t)
+(defun size-callback ()
+  (cond ((> (frame-pixel-width) 1280) '(0.8 . 0.75))
+        (t                            '(0.8 . 0.5))))
+
+(custom-set-variables
+ '(zoom-size 'size-callback))
+(global-set-key (kbd "C-x +") 'zoom)
+)
+#+END_SRC

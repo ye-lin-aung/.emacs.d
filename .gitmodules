@@ -2,7 +2,7 @@
 	path = vendor/swiper
 	url = https://github.com/abo-abo/swiper.git
 [submodule "vendor/snails"]
-	path = vendor/snail
+	path = vendor/snails
 	url = https://github.com/manateelazycat/snails.git
 [submodule "aweshell"]
 	path = aweshell

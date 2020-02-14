@@ -48,7 +48,8 @@
  '(custom-safe-themes
    '("a22f40b63f9bc0a69ebc8ba4fbc6b452a4e3f84b80590ba0a92b4ff599e53ad0" default))
  '(package-selected-packages
-   '(org-download helm-rg restclient highlight-parentheses avy yaml-mode yaml flycheck helm-ag ibuffer-vc multi-term helm-dash vimish-fold dumb-jump web-mode projectile-rails cider highlight-indent-guides docker sublimity magit switch-window ripgrep helm rg ag focus which-key company-web company auto-complete counsel-projectile undo-tree centaur-tabs org-bullets typo typo-mode olivetti poet-theme emojify use-package quelpa projectile dashboard all-the-icons)))
+   '(org-download helm-rg restclient highlight-parentheses avy yaml-mode yaml flycheck helm-ag ibuffer-vc multi-term helm-dash vimish-fold dumb-jump web-mode projectile-rails cider highlight-indent-guides docker sublimity magit switch-window ripgrep helm rg ag focus which-key company-web company auto-complete counsel-projectile undo-tree centaur-tabs org-bullets typo typo-mode olivetti poet-theme emojify use-package quelpa projectile dashboard all-the-icons))
+ '(zoom-size 'size-callback))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -77,8 +78,10 @@
 (setq visible-bell 1)
 
 
-(global-set-key (kbd "C-x C-b") 'ibuffer)
+;;(global-set-key (kbd "C-x C-b") 'ibuffer)
 (load-config)
 (load "package")
 
-
+;; Zone Mode
+(require 'zone)
+(zone-when-idle 120)
