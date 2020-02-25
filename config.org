@@ -1,3 +1,4 @@
+
 #+TITLE: Emacs configuration file
 #+AUTHOR: Ye Lin Aung
 
@@ -534,4 +535,11 @@ Swiper must be installed from git master since the melpa package is broken in em
  '(zoom-size 'size-callback))
 (global-set-key (kbd "C-x +") 'zoom)
 )
+#+END_SRC
+** Multiple cursors MC 
+#+BEGIN_SRC emacs-lisp
+(use-package multiple-cursors
+:ensure t
+)
+(global-set-key (kbd "C-c u m") 'mc/edit-lines)
 #+END_SRC
