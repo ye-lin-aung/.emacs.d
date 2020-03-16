@@ -431,7 +431,12 @@ Swiper must be installed from git master since the melpa package is broken in em
 #+BEGIN_SRC emacs-lisp
 (use-package lsp-mode
   ;; set prefix for lsp-command-keymap (few alternatives - "C-l", "C-c l")
-  :init (setq lsp-keymap-prefix "C-c l")
+  :init
+  (setq read-process-output-max (* 1024 1024)) ;; 1mb
+ (setq gc-cons-threshold 100000000)
+ (setq lsp-idle-delay 0.500)
+ (setq lsp-keymap-prefix "C-c l")
+ 
   :hook (;; replace XXX-mode with concrete major-mode(e. g. python-mode)
          (prog-mode . lsp)
          ;; if you want which-key integration
