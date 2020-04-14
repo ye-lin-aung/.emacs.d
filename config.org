@@ -1,4 +1,3 @@
-
 #+TITLE: Emacs configuration file
 #+AUTHOR: Ye Lin Aung
 
@@ -12,6 +11,7 @@ Cheers ! 🍺
 #+BEGIN_SRC emacs-lisp
 (set-face-attribute 'default nil :height 130)
 #+END_SRC
+
 ** Use package
 Installation of use-package
 #+BEGIN_SRC emacs-lisp
@@ -20,7 +20,6 @@ Installation of use-package
     (package-refresh-contents)
     (package-install 'use-package))
 #+END_SRC
-
 
 
 ** Dashboard
@@ -46,8 +45,14 @@ Installation of use-package
 ;; all-the-icons (Optional) 
 (use-package all-the-icons
    :ensure t
+
 )
 
+(use-package all-the-icons-dired
+   :ensure t
+   :config
+   (add-hook 'dired-mode-hook 'all-the-icons-dired-mode)
+)
 
 ;; Dashboard
 (use-package dashboard
@@ -80,9 +85,9 @@ Installation of use-package
   ("C-c t s" . centaur-tabs-counsel-switch-group)
   ("C-c t p" . centaur-tabs-group-by-projectile-project)
   :config
-  
+  (setq centaur-tabs-set-icons t)
   (centaur-tabs-mode t) 
-  (setq centaur-tabs-style "alternate")
+  (setq centaur-tabs-style "bar")
 )
 (add-hook 'term-mode-hook 'centaur-tabs-local-mode)
 (add-hook 'eshell-mode-hook 'centaur-tabs-local-mode)
@@ -242,16 +247,18 @@ Swiper must be installed from git master since the melpa package is broken in em
 :init
 (add-hook 'prog-mode-hook 'highlight-indent-guides-mode)
 :config
-(setq highlight-indent-guides-method 'fill)
+(setq highlight-indent-guides-method 'character)
 )
 #+END_SRC
 ** Fira code mode
 #+BEGIN_SRC emacs-lisp
 ;; Fira code
 ;; This works when using emacs --daemon + emacsclient
+(when(display-graphic-p)
 (add-hook 'after-make-frame-functions (lambda (frame) (set-fontset-font t '(#Xe100 . #Xe16f) "Fira Code Symbol")))
 ;; This works when using emacs without server/client
 (set-fontset-font t '(#Xe100 . #Xe16f) "Fira Code Symbol")
+(set-face-attribute 'default nil :height 150)
 ;; I haven't found one statement that makes both of the above situations work, so I use both for now
 
 (defconst fira-code-font-lock-keywords-alist
@@ -379,7 +386,7 @@ Swiper must be installed from git master since the melpa package is broken in em
   (font-lock-add-keywords nil fira-code-font-lock-keywords-alist))
 
 (add-hook 'prog-mode-hook
-          #'add-fira-code-symbol-keywords)
+          #'add-fira-code-symbol-keywords))
 
 #+END_SRC
 ** Multi term & Eshell
@@ -423,24 +430,24 @@ Swiper must be installed from git master since the melpa package is broken in em
 :ensure t
 :config
 (elscreen-start)
+(elscreen-toggle-display-tab)
 )
 #+END_SRC
 
 ** LSP mode-
-
 #+BEGIN_SRC emacs-lisp
 (use-package lsp-mode
   ;; set prefix for lsp-command-keymap (few alternatives - "C-l", "C-c l")
   :init
-  (setq read-process-output-max (* 1024 1024)) ;; 1mb
+ (setq read-process-output-max (* 1024 1024)) ;; 1mb
  (setq gc-cons-threshold 100000000)
  (setq lsp-idle-delay 0.500)
  (setq lsp-keymap-prefix "C-c l")
- 
-  :hook (;; replace XXX-mode with concrete major-mode(e. g. python-mode)
-         (prog-mode . lsp)
+
+;;  :hook (;; replace XXX-mode with concrete major-mode(e. g. python-mode)
+;;         (prog-mode . lsp)
          ;; if you want which-key integration
-         (lsp-mode . lsp-enable-which-key-integration))
+;;         (lsp-mode . lsp-enable-which-key-integration))
   :commands lsp)
 
 ;; optionally
@@ -454,6 +461,8 @@ Swiper must be installed from git master since the melpa package is broken in em
 ;; if you are ivy user
 (use-package treemacs
 :ensure t)
+
+
 
 (use-package lsp-ivy
 :ensure t
@@ -495,10 +504,12 @@ Swiper must be installed from git master since the melpa package is broken in em
 :ensure t
 :config
 (telephone-line-mode 1)
-(setq telephone-line-subseparator-faces '())
-(setq telephone-line-height 24
+(setq telephone-line-primary-left-separator 'telephone-line-cubed-left
+      telephone-line-secondary-left-separator 'telephone-line-cubed-hollow-left
+      telephone-line-primary-right-separator 'telephone-line-cubed-right
+      telephone-line-secondary-right-separator 'telephone-line-cubed-hollow-right)
+(setq telephone-line-height 12
       telephone-line-evil-use-short-tag t)
-
 )
 #+END_SRC
 ** Perspective Mode
@@ -524,7 +535,7 @@ Swiper must be installed from git master since the melpa package is broken in em
   :ensure t
   :bind
 )
-(global-set-key (kbd "C-x C-b") 'persp-ivy-switch-buffer)
+(global-set-key (kbd "C-x b") 'persp-ivy-switch-buffer)
 #+END_SRC
 ** Zoom
 #+BEGIN_SRC emacs-lisp

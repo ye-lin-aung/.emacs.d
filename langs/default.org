@@ -49,8 +49,6 @@
   :config (setq dumb-jump-selector 'ivy) ;; (setq dumb-jump-selector 'helm)
   :ensure)
 #+END_SRC
-#+RESULTS:
-: t
 ** Vimish-fold
 #+BEGIN_SRC emacs-lisp
 (use-package vimish-fold

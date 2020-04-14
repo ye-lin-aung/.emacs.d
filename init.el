@@ -46,9 +46,9 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
-   '("a22f40b63f9bc0a69ebc8ba4fbc6b452a4e3f84b80590ba0a92b4ff599e53ad0" default))
+   '("9b01a258b57067426cc3c8155330b0381ae0d8dd41d5345b5eddac69f40d409b" "a83f05e5e2f2538376ea2bfdf9e3cd8b7f7593b16299238c1134c1529503fa88" "8f97d5ec8a774485296e366fdde6ff5589cf9e319a584b845b6f7fa788c9fa9a" "1436d643b98844555d56c59c74004eb158dc85fc55d2e7205f8d9b8c860e177f" "a22f40b63f9bc0a69ebc8ba4fbc6b452a4e3f84b80590ba0a92b4ff599e53ad0" default))
  '(package-selected-packages
-   '(org-download helm-rg restclient highlight-parentheses avy yaml-mode yaml flycheck helm-ag ibuffer-vc multi-term helm-dash vimish-fold dumb-jump web-mode projectile-rails cider highlight-indent-guides docker sublimity magit switch-window ripgrep helm rg ag focus which-key company-web company auto-complete counsel-projectile undo-tree centaur-tabs org-bullets typo typo-mode olivetti poet-theme emojify use-package quelpa projectile dashboard all-the-icons))
+   '(telega org-download helm-rg restclient highlight-parentheses avy yaml-mode yaml flycheck helm-ag ibuffer-vc multi-term helm-dash vimish-fold dumb-jump web-mode projectile-rails cider highlight-indent-guides docker sublimity magit switch-window ripgrep helm rg ag focus which-key company-web company auto-complete counsel-projectile undo-tree centaur-tabs org-bullets typo typo-mode olivetti poet-theme emojify use-package quelpa projectile dashboard all-the-icons))
  '(zoom-size 'size-callback))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -83,7 +83,7 @@
 (load "package")
 
 ;; Zone Mode
-(require 'zone)
-(zone-when-idle 120)
-
+;;(require 'zone)
+;;(zone-when-idle 120)
+(global-linum-mode)
 
