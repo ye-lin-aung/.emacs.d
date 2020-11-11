@@ -35,6 +35,6 @@ Things about my themes configurations 🎨
   ;; Corrects (and improves) org-mode's native fontification.
   (doom-themes-org-config))
 
-(load-theme 'doom-acario-dark t)
+(load-theme 'doom-dark+ t)
 
 #+END_SRC

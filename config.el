@@ -5,16 +5,6 @@
     (package-refresh-contents)
     (package-install 'use-package))
 
-(use-package helm-projectile
-:ensure t
-:config
-)
-
-(use-package helm-ag
-:ensure t
-:config
-)
-
 ;; dependencies page-break-links
 (use-package page-break-lines
  :defer t
@@ -27,19 +17,22 @@
  :defer t
   :ensure t
   :config
- 
-  (define-key projectile-mode-map (kbd "s-p") 'projectile-command-map)
   (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
   (projectile-global-mode)
-  (setq projectile-completion-system 'helm)
-  (helm-projectile-on)
+;;  (setq projectile-completion-system 'helm)
 )
 
 ;; all-the-icons (Optional) 
 (use-package all-the-icons
    :ensure t
+
 )
 
+(use-package all-the-icons-dired
+   :ensure t
+   :config
+   (add-hook 'dired-mode-hook 'all-the-icons-dired-mode)
+)
 
 ;; Dashboard
 (use-package dashboard
@@ -48,6 +41,20 @@
 (setq dashboard-banner-logo-title "Welcome to Ye's Dashboard")
 (setq dashboard-set-heading-icons t)
 (setq dashboard-set-file-icons t)
+(setq dashboard-navigator-buttons
+      `(;; line1
+        ((,(all-the-icons-octicon "mark-github" :height 1.1 :v-adjust 0.0)
+         "Homepage"
+         "Browse homepage"
+         (lambda (&rest _) (browse-url "homepage")))
+        ("★" "Star" "Show stars" (lambda (&rest _) (show-stars)) warning)
+        ("?" "" "?/h" #'show-help nil "<" ">"))
+         ;; line 2
+        ((,(all-the-icons-faicon "linkedin" :height 1.1 :v-adjust 0.0)
+          "Linkedin"
+          ""
+          (lambda (&rest _) (browse-url "homepage")))
+         ("⚑" nil "Show flags" (lambda (&rest _) (message "flag")) error))))
 (setq dashboard-startup-banner "~/.emacs.d/wall.png")
   :init
   (dashboard-setup-startup-hook))
@@ -72,9 +79,10 @@
   ("C-c t s" . centaur-tabs-counsel-switch-group)
   ("C-c t p" . centaur-tabs-group-by-projectile-project)
   :config
-  
+  (setq centaur-tabs-set-icons t)
   (centaur-tabs-mode t) 
-  (setq centaur-tabs-style "alternate")
+  (setq centaur-tabs-set-bar 'under)
+  (setq centaur-tabs-style "bar")
 )
 (add-hook 'term-mode-hook 'centaur-tabs-local-mode)
 (add-hook 'eshell-mode-hook 'centaur-tabs-local-mode)
@@ -196,14 +204,16 @@
 :init
 (add-hook 'prog-mode-hook 'highlight-indent-guides-mode)
 :config
-(setq highlight-indent-guides-method 'fill)
+(setq highlight-indent-guides-method 'character)
 )
 
 ;; Fira code
 ;; This works when using emacs --daemon + emacsclient
+(when(display-graphic-p)
 (add-hook 'after-make-frame-functions (lambda (frame) (set-fontset-font t '(#Xe100 . #Xe16f) "Fira Code Symbol")))
 ;; This works when using emacs without server/client
 (set-fontset-font t '(#Xe100 . #Xe16f) "Fira Code Symbol")
+(set-face-attribute 'default nil :height 150)
 ;; I haven't found one statement that makes both of the above situations work, so I use both for now
 
 (defconst fira-code-font-lock-keywords-alist
@@ -331,7 +341,7 @@
   (font-lock-add-keywords nil fira-code-font-lock-keywords-alist))
 
 (add-hook 'prog-mode-hook
-          #'add-fira-code-symbol-keywords)
+          #'add-fira-code-symbol-keywords))
 
 (use-package multi-term
 :ensure t
@@ -364,15 +374,21 @@
 :ensure t
 :config
 (elscreen-start)
+(elscreen-toggle-display-tab)
 )
 
 (use-package lsp-mode
   ;; set prefix for lsp-command-keymap (few alternatives - "C-l", "C-c l")
-  :init (setq lsp-keymap-prefix "C-c l")
-  :hook (;; replace XXX-mode with concrete major-mode(e. g. python-mode)
-         (prog-mode . lsp)
+  :init
+ (setq read-process-output-max (* 1024 1024)) ;; 1mb
+ (setq gc-cons-threshold 100000000)
+ (setq lsp-idle-delay 0.500)
+ (setq lsp-keymap-prefix "C-c l")
+
+;;  :hook (;; replace XXX-mode with concrete major-mode(e. g. python-mode)
+;;         (prog-mode . lsp)
          ;; if you want which-key integration
-         (lsp-mode . lsp-enable-which-key-integration))
+;;         (lsp-mode . lsp-enable-which-key-integration))
   :commands lsp)
 
 ;; optionally
@@ -386,6 +402,8 @@
 ;; if you are ivy user
 (use-package treemacs
 :ensure t)
+
+
 
 (use-package lsp-ivy
 :ensure t
@@ -412,3 +430,101 @@
   ;; line below instead:
   ;;:hook (eshell-mode-hook . esh-autosuggest-mode)
   :ensure t)
+
+(require 'cl)
+(use-package telephone-line
+:ensure t
+:config
+(telephone-line-mode 1)
+(setq telephone-line-primary-left-separator 'telephone-line-cubed-left
+      telephone-line-secondary-left-separator 'telephone-line-cubed-hollow-left
+      telephone-line-primary-right-separator 'telephone-line-cubed-right
+      telephone-line-secondary-right-separator 'telephone-line-cubed-hollow-right)
+(setq telephone-line-height 12
+      telephone-line-evil-use-short-tag t)
+)
+
+(use-package perspective
+:ensure t
+:config
+
+(persp-mode)
+)
+
+(use-package counsel-projectile
+:ensure t
+:config 
+(counsel-projectile-mode)
+)
+(use-package persp-projectile
+  :after (perspective)
+  :ensure t
+  :bind
+)
+(global-set-key (kbd "C-x b") 'persp-ivy-switch-buffer)
+
+(use-package zoom
+:ensure t
+:config 
+(zoom-mode t)
+(defun size-callback ()
+  (cond ((> (frame-pixel-width) 1280) '(0.8 . 0.75))
+        (t                            '(0.8 . 0.5))))
+
+(custom-set-variables
+ '(zoom-size 'size-callback))
+(global-set-key (kbd "C-x +") 'zoom)
+)
+
+(use-package multiple-cursors
+:ensure t
+)
+(global-set-key (kbd "C-c u m") 'mc/edit-lines)
+
+(use-package hydra
+:ensure t
+:config
+(defhydra hydra-zoom (global-map "<f2>")
+  "zoom"
+  ("g" text-scale-increase "in")
+  ("l" text-scale-decrease "out"))
+(defhydra hydra-flycheck (global-map "<f2>")
+  "flycheck"
+  ("n" flycheck-next-error)
+  ("p" flycheck-previous-error))
+)
+(use-package corral
+:ensure t
+  :config
+  (defhydra hydra-corral (:columns 4)
+    "Corral"
+    ("(" corral-parentheses-backward "Back")
+    (")" corral-parentheses-forward "Forward")
+    ("[" corral-brackets-backward "Back")
+    ("]" corral-brackets-forward "Forward")
+    ("{" corral-braces-backward "Back")
+    ("}" corral-braces-forward "Forward")
+    ("." hydra-repeat "Repeat"))
+  (global-set-key (kbd "C-c n") #'hydra-corral/body))
+
+(use-package eaf
+  :load-path "~/.emacs.d/vendor/emacs-application-framework" ; Set to "/usr/share/emacs/site-lisp/eaf" if installed from AUR
+  :custom
+  (eaf-find-alternate-file-in-dired t)
+  :config
+  (eaf-bind-key scroll_up "C-n" eaf-pdf-viewer-keybinding)
+  (eaf-bind-key scroll_down "C-p" eaf-pdf-viewer-keybinding)
+  (eaf-bind-key take_photo "p" eaf-camera-keybinding))
+
+(use-package company-box
+  :ensure t
+  :hook (company-mode . company-box-mode))
+
+(use-package mini-frame
+:ensure t
+:config (custom-set-variables
+ '(mini-frame-show-parameters
+   '((top . 130)
+     (width . 0.5)
+     (left . 0.5)))))
+;;(mini-frame-mode)

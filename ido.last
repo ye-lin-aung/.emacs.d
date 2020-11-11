@@ -2,21 +2,58 @@
 
 ;; ----- ido-last-directory-list -----
 (
- ("/home/yelinaung/pw/" . "popdb-analysis/")
+ ("/home/yelinaung/pw/pemas/tvet/" . "data/")
+ ("/home/yelinaung/pw/pemas/cad-kms/app/views/" . "activities/")
+ ("/home/yelinaung/pw/sso-c4m/sso-c4m/lib/" . "tasks/")
+ ("/home/yelinaung/pw/sso-c4m/sso-c4m/" . "db/")
+ ("/home/yelinaung/pw/znx-flow/db/" . "migrate/")
+ ("/home/yelinaung/pw/moe-registry/db/" . "migrate/")
+ ("/home/yelinaung/pw/moe-registry/app/" . "javascript/")
+ ("/home/yelinaung/pw/sspms/data/" . "old/")
+ ("/home/yelinaung/pw/" . "encoder/")
  ("/home/yelinaung/" . "pw/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
  "/home/yelinaung/.emacs.d/"
+ "/home/yelinaung/pw/dht-license-web/app/superworkers/"
+ "/home/yelinaung/pw/gadi/gadi-web/app/javascript/channels/"
+ "/home/yelinaung/pw/encoding-rails/app/controllers/"
+ "/home/yelinaung/pw/encoder/"
+ "/home/yelinaung/pw/labour-aid/app/javascript/controllers/"
+ "/home/yelinaung/pw/labour-aid/app/controllers/"
+ "/home/yelinaung/pw/labour-aid/app/views/layouts/"
+ "/home/yelinaung/pw/labour-aid/app/datatables/"
+ "/home/yelinaung/pw/"
+ "/home/yelinaung/pw/pemas/tvet/data/"
+ "/home/yelinaung/pw/pemas/"
+ "/home/yelinaung/pw/pemas/cad-kms/app/views/activities/"
+ "/home/yelinaung/pw/pemas/cad-kms/lib/"
+ "/home/yelinaung/pw/medical/db/"
+ "/home/yelinaung/"
+ "/home/yelinaung/pw/sso-c4m/sso-c4m/lib/tasks/"
+ "/home/yelinaung/pw/sso-c4m/sso-c4m/app/controllers/"
+ "/home/yelinaung/pw/sspms/app/javascript/channels/"
+ "/home/yelinaung/pw/rboard/"
+ "/home/yelinaung/pw/znx-flow/db/migrate/"
+ "/home/yelinaung/pw/gadi/gadi-web/"
+ "/home/yelinaung/pw/moe-registry/app/controllers/api/v1/"
+ "/home/yelinaung/pw/moe-registry/db/migrate/"
+ "/home/yelinaung/pw/moe-registry/app/api/"
+ "/home/yelinaung/pw/moe-registry/"
+ "/home/yelinaung/pw/dsa-solutions/"
+ "/home/yelinaung/pw/cov19-border-cross/"
+ "/home/yelinaung/pw/gadi/gadi-web/app/views/dashboard/creators/"
+ "/home/yelinaung/pw/sspms/data/old/"
+ "/home/yelinaung/pw/sspms/db/seeds/"
+ "/home/yelinaung/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/administrate-field-nested_has_many-1.2.0/app/views/fields/nested_has_many/"
  "/home/yelinaung/pw/intro-to-CloudFormation_AC/02 CloudFormation Features/"
  "/home/yelinaung/pw/python-practise/99-python-exercise/"
  "/home/yelinaung/pw/gadi/gadi-web/app/controllers/dashboard/"
  "/home/yelinaung/pw/yrg-population-database/"
- "/home/yelinaung/pw/"
  "/home/yelinaung/pw/popdb-analysis/"
  "/home/yelinaung/.linuxbrew/bin/"
- "/home/yelinaung/"
 )
 
 ;; ----- ido-work-file-list -----
@@ -31,9 +68,157 @@
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/yelinaung/.emacs.d/" (24132 62665 328456 900000) "vendor/" "#init.el#" "projectile-bookmarks.eld" "./" "vimish-fold/" "../" "img/" "ac-comphist.dat" "wall(1).png:Zone.Identifier" "org.org~" "theme.org~" "org.el" "ido.last" "material-design-icons.ttf" "#org.org#" ".lsp-session-v1" "weathericons.ttf" "ido.last~" "all-the-icons.ttf" ".gitmodules" "file-icons.ttf" "recentf~" "auto-save-list/" "README.org" "url/" "init.el~" "recentf" "theme.org" ".#org.org" "config.org" "README.org~" "emojis/" "tramp" "transient/" "org.org" ".git/" "config.org_archive" "elpa/" "wall.png" "theme.el" "langs/" "octicons.ttf" "eshell/" "config.el" ".gitignore" "init.el" "fontawesome.ttf" "config.org~")
+ ("/home/yelinaung/.emacs.d/" (24491 20573 310000 0) "vendor/" "projectile-bookmarks.eld" "./" "vimish-fold/" "../" "img/" "ac-comphist.dat" "wall(1).png:Zone.Identifier" "org.org~" "theme.org~" "org.el" "ido.last" "projectile.cache" "material-design-icons.ttf" ".lsp-session-v1" "weathericons.ttf" "ido.last~" "all-the-icons.ttf" ".gitmodules" "file-icons.ttf" "recentf~" "auto-save-list/" "README.org" "url/" "init.el~" "recentf" "theme.org" "config.org" "README.org~" "emojis/" "tramp" "transient/" "org.org" ".git/" "config.org_archive" "elpa/" "wall.png" "theme.el" "langs/" ".cache/" "octicons.ttf" "rake.cache" "eshell/" "config.el" ".emacs.desktop" ".gitignore" "init.el" "fontawesome.ttf" ".mc-lists.el" "config.org~" "#recentf#")
 
- ("/home/yelinaung/" (24130 25567 955403 200000) ".dbus/" "./" ".sdkman/" ".zshrc.pre-oh-my-zsh" "../" ".zsh_history" ".pyenv/" ".yarn/" ".local/" ".emacs.d/" ".vscode/" ".bundle/" "offlineimap-7.3.2/" ".tmux.conf.local" ".linuxbrew/" ".bashrc" ".solargraph/" "fira-code-emacs/" ".viminfo" ".zprofile" ".presage/" ".zshrc" ".sqlite_history" ".yarnrc" ".bash_logout" ".ssh/" ".fzf/" "pw/" ".profile" ".gtkrc-2.0" ".docker/" ".oh-my-zsh/" ".config/" ".cargo/" ".wget-hsts" ".gem/" ".tmux.conf" "winhome/" ".pki/" ".tmux/" ".firstrun" ".saves/" ".bash_history" ".rbenv/" ".cache/" "go/" ".zcompdump-DESKTOP-FLSHP9Q-5.7.1" "v7.3.2.tar.gz" ".node-gyp/" ".mozc/" ".gitconfig" ".icons/" ".vim/" ".cpan/" "emacs/" ".fzf.bash" ".npm/" ".rustup/" ".python_history")
+ ("/home/yelinaung/" (24485 1314 410000 0) ".dbus/" ".hex/" "./" ".sdkman/" ".zshrc.pre-oh-my-zsh" "../" ".guard_history" ".flutter_settings" ".expo/" ".lesshst" ".irb_history" ".node_repl_history" ".flutter_tool_state" ".zcompdump" ".zsh_history" ".pyenv/" ".ghc/" ".yarn/" ".local/" "build/" ".emacs.d/" ".vscode/" ".flutter" "google-cloud-sdk/" ".android/" ".bundle/" ".jx/" ".mitmproxy/" ".linuxbrew/" ".bashrc" ".solargraph/" ".asdf/" ".viminfo" ".rediscli_history" ".zprofile" ".synaptic/" ".zshrc.bk" ".presage/" ".volta/" ".zshrc" ".sqlite_history" ".yarnrc" ".bash_logout" ".ssh/" ".fzf/" "pw/" ".vim_runtime/" ".cabal/" ".profile" ".netrc" ".gtkrc-2.0" ".tool-versions" ".docker/" ".aws/" ".telega/" ".oh-my-zsh/" ".config/" ".serverlessrc" ".cargo/" ".wget-hsts" ".stack/" ".gem/" ".tmux.conf" ".serverless/" "winhome/" ".vimrc" ".pki/" ".tmux/" ".firstrun" ".saves/" ".bash_history" ".vim_mru_files" ".rbenv/" ".cache/" ".kube/" "go/" ".zcompdump-DESKTOP-FLSHP9Q-5.7.1" ".node-gyp/" ".mozc/" ".gitconfig" ".icons/" ".ngrok2/" ".psql_history" ".vim/" ".react-native-cli/" ".cpan/" "emacs/" ".byobu/" ".fzf.bash" ".npm/" ".azure/" ".rustup/" ".python_history")
+
+ ("/home/yelinaung/pw/dht-license-web/app/superworkers/" (24471 61198 770000 0) "./" "../" "cert_batch_worker.rb")
+
+ ("/home/yelinaung/pw/gadi/gadi-web/app/javascript/channels/" (24475 62271 995797 900000) "./" "../" "index.js" "consumer.js" "release_updates_channel.js")
+
+ ("/home/yelinaung/pw/encoding-rails/app/controllers/" (24467 14415 640000 0) "./" "../" "home_controller.rb" "application_controller.rb" "concerns/" "home/")
+
+ ("/home/yelinaung/pw/encoder/" (24467 5595 940000 0) "vendor/" "./" "../" "split-encoder.rb" "tmp/" "copilot/" "Dockerfile" ".bundle/" "hls_sh" "serverless.yml" "Gemfile" "copilot.sh" "handler.rb" "Gemfile.lock" ".serverless/" "media.rb" ".gitignore")
+
+ ("/home/yelinaung/pw/" (24467 5633 350000 0) "chatesat.json" "OldDump20191021.sql" "os/" "pemas-base-template/" "ocr-demo/" "oauth/" "c4m/" "edmm/" "three-tier-with-bashtion-host.yaml" "maintainence.html" "sspms-migration/" "gadi/" "ostep/" "blog/" "frame/" "dsa-solutions/" "bulid/" "administrate-field-nested_has_many/" "mysql-compose.yml" "setup.PNG" "FiraCode-Regular-Symbol.otf" "three-tier-with-bastion-host-and-natgateway.yaml" "tmp.json" "docker-revive/" "gold-dignity.com/" "pemas/" "ngrok" "eaf.gif" "metronic_v6.1.8/" "yrg_hotel_guest_list_msys/" "mental-backend/" "test_preview.jpg" "learn_c4m_alb.yaml" "2-sum/" "encoding-rails/" "test.mkv" "a.png" "Template-VPC-With-BashtionHost.yaml" "encoder/" "test.png" "htuhtaung/" "labouraid-data/" "sspms/" "random-csv/" "moi_yric_data/" "saryay.club/" "learn_c4m_node_port.yaml" "todo-data/" "ag-grid-generator/" "anim.gif" "id_rsa" "a.sh" "sso-c4m/" "medical/" "elixir-exercise/" ".tmux.conf" "openedx/" "apw/" ".tmux/" "id_rsa.pub" "streaming-test/" "sspms-new/" "administrate/" "alb-ingress-controller.yaml" "sso.key" "labour-aid/" "covid19-border-cross/" "cloudguru-guidelines.html" "pemas-data/" "ingress.yml" "znx-template/" "flashlight-data/" "sso/" "lox/" "package-lock.json" "cloudguru-guidelines.org" "../" "./")
+
+ ("/home/yelinaung/pw/gadi/" (24359 45373 0 0) "./" "../" "dump.zip" "gadi-web/" "latest-dump.sql" ".formatter.exs" "gadi-compose.yml" "test-gadi-compose.yml" "README.md" ".gitignore")
+
+ ("/home/yelinaung/pw/gadi/gadi-web/" (24386 7264 789387 500000) "vendor/" ".rspec" "./" "log/" "../" "gadi.pub" "sample.md" "index.html" "tmp/" "tracks-error2.txt" "gadi" "sample.org" ".browserslistrc" "public/" "sample.html" "bin/" "Dockerfile" "yarn.lock" "creators-errors.txt" "albums-errors.txt" "test/" "Capfile" "backup.sql" "util.css" "errors.txt" "Rakefile" "app/" "tracks-errors.txt" "Gemfile" "config/" ".ruby-version" "lib/" "postcss.config.js" "db/" "Gemfile.lock" "spec/" ".git/" "dump.sql" "user.png:Zone.Identifier" "README.md" "package.json" ".log/" ".gitignore" "babel.config.js" "storage/" "docker/" "loader.js" "data/" "config.ru" "package-lock.json" "node_modules/")
+
+ ("/home/yelinaung/pw/gadi/gadi-web/public/" (24467 5951 970000 0) "./" "tracks-template.xlsx" "../" "logo.png" "422.html" "GADI PNG ONLY WHITE.png:Zone.Identifier" "user-black.png" "user.png" "lock.svg:Zone.Identifier" "fpause.svg" "logo-white.png" "fpause.svg:Zone.Identifier" "upload.png" "artist2.jpg" "member_1.png" "apple-touch-icon.png" "upload.png:Zone.Identifier" "backdrop.png" "404.html" "favicon.ico" "fplay.svg" "apple-touch-icon-precomposed.png" "background_admin.jpg" "tracks-template.xlsx:Zone.Identifier" "undraw_not_found_60pq.svg:Zone.Identifier" "homev2/" "set_filter.js" "packs/" "rightholders-template.xlsx:Zone.Identifier" "notfound.svg" "user(1).png:Zone.Identifier" "assets/" "dashboard/" "robots.txt" "notfound.png" "user(3).png:Zone.Identifier" "backdrop.png:Zone.Identifier" "melo.png" "undraw_not_found_60pq.png:Zone.Identifier" "user.png:Zone.Identifier" "melo.png:Zone.Identifier" "member_2_active.png" "fplay.svg:Zone.Identifier" "member_2.png" "date_cell_editor.js" "500.html" "link.png" "albums-template.xlsx" "photo.png" "link.png:Zone.Identifier" "rightholders-template.xlsx" "user(2).png:Zone.Identifier" "member_1_active.png" "home/" "lock.svg" "report.svg:Zone.Identifier" "artist.jpg")
+
+ ("/home/yelinaung/pw/labour-aid/app/views/application_requests/" (24466 35943 420000 0) "./" "../" "_employee_list.html.erb" ".#_form.html.erb" "show.json.jbuilder" "_application_request.json.jbuilder" "new_employees.html.erb" "_form.html.erb" "edit.html.erb" "show.html.erb" "index.json.jbuilder" "new.html.erb" "index.html.erb" "_file_upload_modal.html.erb")
+
+ ("/home/yelinaung/pw/labour-aid/app/javascript/controllers/" (24465 19115 427825 600000) "./" "../" "summary_grid_controller.js" "datatable_controller.js" "application_controller.js" "hello_controller.js" "index.js" "example_controller.js" "employee_grid_controller.js" "upload_excel_controller.js")
+
+ ("/home/yelinaung/pw/labour-aid/app/controllers/./" (24446 5120 370000 0) "./" "../" "home_controller.rb" "application_requests_controller.rb" "application_controller.rb" "townships_controller.rb" "#application_controller.rb#" "concerns/" "Users/" "workplaces_controller.rb" "users_controller.rb")
+
+ ("/home/yelinaung/pw/labour-aid/app/controllers/" (24446 5120 370000 0) "./" "../" "home_controller.rb" "application_requests_controller.rb" "application_controller.rb" "townships_controller.rb" "#application_controller.rb#" "concerns/" "Users/" "workplaces_controller.rb" "users_controller.rb")
+
+ ("/home/yelinaung/pw/pemas/tvet/app/views/" (24432 18705 744700 900000) "./" "../" "courses/" "short_courses/" "data_schemas/" "initial_returns/" "subjects/" "data_values/" "staffs/" "covid19s/" "shared/" "inventories/" "grid/" "schools/" "staff_associates/" "data_forms/" "items/" "monthly_return/" "layouts/" "item_transactions/" "inventory/" "users/" "inventory_items/" "inventory_item_categories/" "announcements/" "home/" "applicants/")
+
+ ("/home/yelinaung/pw/pemas/tvet/app/views/layouts/" (24446 2398 310000 0) "./" "../" "public.html.erb" "saas.html.erb" "application.html.erb" "mailer.text.erb" "mailer.html.erb")
+
+ ("/home/yelinaung/pw/labour-aid/app/views/layouts/" (24444 36015 850163 800000) "./" "../" "saas.html.erb" "application.html.erb" "mailer.text.erb" "mailer.html.erb")
+
+ ("/home/yelinaung/pw/labour-aid/app/datatables/" (24444 31127 780163 800000) "./" "../" "workplaces_datatable.rb")
+
+ ("/home/yelinaung/pw/labour-aid/" (24444 24251 540163 800000) "vendor/" "Procfile" "./" "log/" "../" "tmp/" "public/" "bin/" "yarn.lock" "test/" "kube/" "Rakefile" "Procfile.dev" "app/" "labouraid-data/" "Gemfile" "config/" "lib/" "postcss.config.js" "db/" "Gemfile.lock" "spec/" ".git/" "README.md" "docker-compose.yml" "package.json" ".gitignore" "babel.config.js" "storage/" "buildspec.yml" "docker/" "config.ru" "node_modules/")
+
+ ("/home/yelinaung/pw/htuhtaung/" (24444 9901 530163 800000) "vendor/" "Procfile" "./" "log/" "../" "tmp/" ".browserslistrc" "public/" "bin/" "Dockerfile" "yarn.lock" "eaf.gif" "test/" "Rakefile" "Procfile.dev" "app/" ".github/" "Gemfile" "config/" ".ruby-version" ".foreman" "lib/" "postcss.config.js" "db/" "Gemfile.lock" ".git/" ".standard.yml" "chromedriver" ".dockerignore" "README.md" "package.json" ".gitignore" "netflix-web.gif" "babel.config.js" "Guardfile" "storage/" ".gitlab-ci.yml" "docker/" "data/" "config.ru" "package-lock.json" "node_modules/")
+
+ ("/home/yelinaung/pw/htuhtaung/lib/" (24399 57308 373990 300000) "./" "../" "assets/" "templates/" "tasks/" "jumpstart/")
+
+ ("/home/yelinaung/pw/htuhtaung/lib/tasks/" (24444 11233 610163 800000) "./" "../" ".keep" "auto_annotate_models.rake")
+
+ ("/home/yelinaung/pw/pemas/tvet/" (24427 11415 606309 500000) ".env" "vendor/" "Procfile" "tvet-data/" ".rspec" "./" "log/" "../" "tmp/" ".browserslistrc" "public/" "bin/" "tvet.pem" "yarn.lock" "test/" "kube/" "Rakefile" "public-tvet.pem" "Procfile.dev" "app/" "Gemfile" "config/" ".ruby-version" "lib/" "postcss.config.js" "db/" "Gemfile.lock" "spec/" ".git/" ".rubocop.yml" "README.md" "docker-compose.yml" "package.json" ".gitignore" "babel.config.js" "storage/" "buildspec.yml" "docker/" "data/" "config.ru" "node_modules/")
+
+ ("/home/yelinaung/pw/pemas/tvet/data/" (24432 18705 744700 900000) "./" "../" "inventory_item_categories_other_machine.json" "inventory_item_categories_motor_cycle.json" "Final CSV Data 2-20200916T050520Z-001.zip:Zone.Identifier" "institutes.csv" "batch1/" "inventory_item_categories_vehicle.json" "inventory_item_categories_aircraft.json" "Final CSV Data 2-20200916T050520Z-001.zip" "Final CSV Data 4 (18.9.2020)-20200918T073904Z-001.zip" "inventory_item_categories_locomotives.json" "inventory_item_categories_office_appliance_schema.json" "Final CSV Data 4 (18.9.2020)-20200918T073904Z-001.zip:Zone.Identifier" "inventory_item_categories_computer_schema.json" "inventory_item_categories_vessel.json" "inventory_item_categories_heavy_machine.json" "Final CSV Data 3 (18.9.2020)-20200918T035154Z-001.zip:Zone.Identifier" "batch3/" "office_furniture_schema.json" "inventory_item_categories_coach.json" "Final CSV Data-20200916T023203Z-001.zip:Zone.Identifier" "batch2/" "Final CSV Data 3 (18.9.2020)-20200918T035154Z-001.zip")
+
+ ("/home/yelinaung/pw/pemas/" (24432 59077 954700 900000) ".env" "pemas-base-template/" "./" "../" "cad-kms/" "yay/" "cas/" "Hyper_v3.3.0.zip" "voterdb-serverless/" "values.yaml" "production.docker-compose.yml" "voter_list_web_app_release-v1.0.3-20200927T192154Z-001.zip:Zone.Identifier" "db.sql" "Hyper_v3.3.0/" "c4m-information-system/" "c4m-data/" "docker-compose.yml" "docker-compose-bk.yml" "GAD CSV - Sheet2.csv:Zone.Identifier" "seed/" "tvet/" "c4m_exporter/")
+
+ ("/home/yelinaung/pw/sspms/app/services/" (24433 19180 474700 900000) "./" "modal_responder.rb" "../" "township_allocation_calculator.rb")
+
+ ("/home/yelinaung/pw/pemas/cad-kms/app/views/activities/" (24370 27584 235288 800000) "./" "../" "_activity.json.jbuilder" "show.json.jbuilder" "_form.html.erb" "preview.html.erb" "edit.html.erb" "show.html.erb" "index.json.jbuilder" "new.html.erb" "index.html.erb")
+
+ ("/home/yelinaung/pw/pemas/cad-kms/app/views/" (24370 24456 275288 800000) "./" "../" "events/" "shared/" "activities/" "layouts/" "active_storage/" "articles/" "home/")
+
+ ("/home/yelinaung/pw/pemas/cad-kms/app/views/articles/" (24370 31057 215288 800000) "./" "../" "show.json.jbuilder" "_article.json.jbuilder" "_form.html.erb" "preview.html.erb" "preview_all.html.erb" "edit.html.erb" "show.html.erb" "index.json.jbuilder" "new.html.erb" "index.html.erb")
+
+ ("/home/yelinaung/pw/pemas/cad-kms/app/javascript/" (24370 7670 135288 800000) "./" "../" "controllers/" "packs/" "channels/")
+
+ ("/home/yelinaung/pw/pemas/cad-kms/app/javascript/packs/" (24370 21416 85288 800000) "./" "../" "application.js")
+
+ ("/home/yelinaung/pw/pemas/cad-kms/lib/" (24370 7670 145288 800000) "./" "../" "assets/" "templates/" "tasks/")
+
+ ("/home/yelinaung/pw/pemas/cad-kms/" (24370 15902 615288 800000) "vendor/" "Procfile" ".rspec" "./" "log/" "../" "tmp/" ".browserslistrc" "public/" "bin/" "yarn.lock" "test/" "kube/" "Rakefile" "Procfile.dev" "app/" "Gemfile" "config/" ".ruby-version" "lib/" "postcss.config.js" "db/" "Gemfile.lock" "spec/" ".git/" "README.md" "docker-compose.yml" "package.json" ".gitignore" "babel.config.js" "storage/" "buildspec.yml" "docker/" "config.ru" "node_modules/")
+
+ ("/home/yelinaung/pw/pemas/cad-kms/app/" (24370 7670 135288 800000) "./" "../" "mailers/" "javascript/" "models/" "components/" "controllers/" "helpers/" "assets/" "reflexes/" "jobs/" "channels/" "views/")
+
+ ("/home/yelinaung/pw/sspms/app/controllers/" (24326 58035 263362 300000) "payouts_controller.rb" "./" "../" "home_controller.rb" "announcements_controller.rb" "enrollments_controller.rb" "export_controller.rb" "notifications_controller.rb" "application_controller.rb" "applicants_controller.rb" "students_controller.rb" "admin/" "users/" "concerns/" "schools_controller.rb" "\\" "home/")
+
+ ("/home/yelinaung/pw/medical/db/" (24152 40547 422061 900000) "./" "../" "seeds.rb" "mental.dump" "schema.rb" "migrate/" "migrate_sql/" "development.sqlite3")
+
+ ("/home/yelinaung/pw/gadi/gadi-web/app/views/home/profile/" (24324 22334 545436 500000) "./" "../" "_aside.html.erb" "_me.html.erb" "_creator.html.erb" "change_password.html.erb" "_partner.html.erb" "index.html.erb")
+
+ ("/home/yelinaung/pw/gadi/gadi-web/app/views/shared/" (24324 22282 965436 500000) "./" "../" "_subscription_item.html.erb" "_five_layers_selector.html.erb" "_percentage_individual_form.html.erb" "_large_image.html.erb" "_notifications.html.erb" "_info_span.html.erb" "_five_layers_show.html.erb" "_datatables.html.erb" "_small_image.html.erb" "_gravatar.html.erb" "_aggregator_selector.html.erb" "_invoice_import_track.html.erb" "_invoices_receipts.html.erb" "_colored_span.html.erb" "_total_tracks.html.erb" "_fanlink_clicked_items.html.erb" "_image.html.erb" "_rightholder_details.html.erb" "_album_supplier.html.erb" "_checkbox.html.erb" "_image_upload.html.erb" "#_gravatar.html.erb#" "_navbar.html.erb" "_link.html.erb" "_track_modal.html.erb" "_payments_details.html.erb" "_invoice_pay.html.erb" "v2/" "_song_note.html.erb" "_partners_group.html.erb" "_loading.html.erb" "_form_checkbox.html.erb" "_invoice_pricings_view.html.erb")
+
+ ("/home/yelinaung/pw/sso-c4m/sso-c4m/lib/tasks/" (24305 46362 950000 0) "./" "custom_seed.rb" "../" ".keep" "pcode_setup.rake")
+
+ ("/home/yelinaung/pw/sso-c4m/sso-c4m/lib/" (24288 34302 232238 800000) "./" "../" "assets/" "templates/" "tasks/")
+
+ ("/home/yelinaung/pw/sso-c4m/sso-c4m/db/" (24305 45348 600000 0) "./" "../" "seeds.rb" "schema.rb" "migrate/" "development.sqlite3")
+
+ ("/home/yelinaung/pw/sso-c4m/sso-c4m/" (24305 45744 50000 0) ".env" "vendor/" ".rspec" "./" "log/" "../" "tmp/" "latest.dump" ".browserslistrc" "public/" "bin/" "yarn.lock" "test/" "Readme.md" "sso.sql" "kube/" "Rakefile" "app/" "Gemfile" "config/" ".ruby-version" "lib/" "postcss.config.js" "db/" "Gemfile.lock" "spec/" ".git/" "README.md" "package.json" ".gitignore" "babel.config.js" "storage/" "dbrun.sh" "buildspec.yml" "docker/" "data/" "config.ru" "node_modules/")
+
+ ("/home/yelinaung/pw/sso-c4m/sso-c4m/config/" (24305 45238 750000 0) "./" "../" "locales/" "credentials.yml.enc" "environments/" "master.key" "puma.rb" "boot.rb" "initializers/" "application.rb" "storage.yml" "webpacker.yml" "database.yml" "cable.yml" "webpack/" "routes.rb" "environment.rb" "spring.rb")
+
+ ("/home/yelinaung/pw/sso-c4m/sso-c4m/config/initializers/" (24305 43728 280000 0) "./" "../" "application_controller_renderer.rb" "devise.rb" "cookies_serializer.rb" "generators.rb" "simple_form.rb" "filter_parameter_logging.rb" "inflections.rb" "assets.rb" "wrap_parameters.rb" "backtrace_silencers.rb" "content_security_policy.rb" "mime_types.rb" "saml_idp.rb")
+
+ ("/home/yelinaung/pw/sso-c4m/sso-c4m/app/controllers/" (24300 20859 720000 0) "./" "../" "home_controller.rb" "village_tracts_controller.rb" "wards_controller.rb" "application_controller.rb" "townships_controller.rb" "towns_controller.rb" "saml_idp_controller.rb" "admin/" "concerns/" "state_regions_controller.rb" "districts_controller.rb")
+
+ ("/home/yelinaung/pw/sspms/node_modules/stimulus_reflex/node_modules/@rails/actioncable/src/" (24276 57601 855114 900000) "./" "../" "logger.js" "connection.js" "subscription.js" "connection_monitor.js" ".#consumer.js" "adapters.js" "index.js" "consumer.js" "internal.js" "subscriptions.js")
+
+ ("/home/yelinaung/pw/sspms/app/javascript/channels/" (24112 21165 225661 100000) "./" "../" "index.js" "consumer.js")
+
+ ("/home/yelinaung/pw/rboard/lib/rboard_web/" (24228 24687 730972 300000) "./" "../" "router.ex" "live/" "controllers/" "endpoint.ex" "templates/" "channels/" "views/" "telemetry.ex" "gettext.ex")
+
+ ("/home/yelinaung/pw/rboard/" (24228 15939 540972 300000) "./" "../" "_build/" "test/" "deps/" ".formatter.exs" "mix.exs" "mix.lock" "config/" "lib/" "priv/" "assets/" "README.md" ".gitignore" "dbrun.sh")
+
+ ("/home/yelinaung/pw/znx-flow/db/migrate/" (24226 33914 940000 0) "./" "../" "20200423061138_devise_create_users.rb" "20200422104630_add_flow_code_to_flows.rb" "20200424061730_add_name_to_users.rb" "#20200422054250_create_events.rb#" "20200423082001_create_user_groups.rb" "20200422095840_create_add_sequence_to_event_flows.rb" "20200423051722_create_file_attachments.rb" "20200423051958_create_active_storage_tables.active_storage.rb" "20200422090905_add_object_changes_to_versions.rb" "20200423063601_create_groups.rb" "20200422054250_create_events.rb" "20200422091144_create_data_values.rb" "20200422094756_create_event_flows.rb" "20200422090904_create_versions.rb" "20200423092253_add_read_write_to_data_values.rb" "20200422061938_create_event_forms.rb" "20200423075106_add_transaction_id_column_to_versions.rb" "20200423075105_create_version_associations.rb" "20200422094744_create_flows.rb")
+
+ ("/home/yelinaung/pw/znx-flow/db/" (24223 55642 110029 100000) "./" "../" "seeds.rb" "schema.rb" "migrate/")
+
+ ("/home/yelinaung/pw/znx-flow/" (24226 29600 780000 0) "vendor/" "./" "log/" "../" "tmp/" ".browserslistrc" "public/" "bin/" "yarn.lock" "test/" "Rakefile" "app/" "Gemfile" "config/" ".ruby-version" "lib/" "postcss.config.js" "db/" "Gemfile.lock" ".git/" "README.md" "package.json" ".gitignore" "babel.config.js" "storage/" "dbrun.sh" "config.ru" "node_modules/")
+
+ ("/home/yelinaung/pw/znx-flow/app/" (24226 27141 470000 0) "./" "../" "mailers/" "javascript/" "models/" "dashboards/" "controllers/" "helpers/" "assets/" "jobs/" "channels/" "views/")
+
+ ("/home/yelinaung/pw/znx-flow/app/models/" (24226 34778 250000 0) "data_value.rb" "./" "../" "event_form.rb" "user_group.rb" "event.rb" "file_attachment.rb" "add_sequence_to_event_flow.rb" "application_record.rb" "concerns/" "group.rb" "flow.rb" "event_flow.rb" "user.rb")
+
+ ("/home/yelinaung/pw/dsa-solutions/" (24218 37713 770834 900000) "find_same_index_with_array_indices.rb" "./" "medium_pivot_quicksort.rb" "../" "mcut.rb" "second-largest-array.rb" "integerArray.txt" "testcase.txt" "last_pivot_quicksort.rb" "jump_search.rb" "unmodal_array.rb" "swap_last_pivot_quicksort.rb" "testcase2.txt" "linear_search.rb" "qs_numbers.txt" "binary_search.rb" "ssc-testcase.txt" ".git/" "karatsuba_multiplication.rb" "counting-inversions.rb" "ssc-testcase2.txt" "ssc.rb" "mincut.txt" "graph/" "quicksort.rb")
+
+ ("/home/yelinaung/pw/moe-registry/app/views/layouts/" (24205 42238 606304 0) "./" "../" "application.html.erb" "mailer.text.erb" "mailer.html.erb")
+
+ ("/home/yelinaung/pw/moe-registry/app/controllers/api/v1/" (24204 11224 820469 900000) "./" "../" "api_v1_controller" "documents_controller.rb")
+
+ ("/home/yelinaung/pw/moe-registry/db/migrate/" (24204 8785 670469 900000) "./" "../" "20200406042809_create_active_storage_tables.active_storage.rb" "20200406041837_create_documents.rb" "20200406041836_devise_create_users.rb" "20200406051509_create_comments.rb" "20200407064849_add_additionals_to_users.rb" "20200406042020_add_user_type_to_users.rb" "20200406061454_add_working_status_to_documents.rb" "20200406042005_add_name_to_users.rb")
+
+ ("/home/yelinaung/pw/moe-registry/db/" (24204 8809 240469 900000) "./" "../" "seeds.rb" "schema.rb" "migrate/" "development.sqlite3")
+
+ ("/home/yelinaung/pw/moe-registry/" (24204 6313 940469 900000) "vendor/" "./" "log/" "../" "tmp/" ".browserslistrc" "public/" "bin/" "yarn.lock" "test/" "kube/" "Rakefile" "app/" "Gemfile" "config/" ".ruby-version" "lib/" "postcss.config.js" "db/" "Gemfile.lock" ".git/" "README.md" "package.json" ".gitignore" "babel.config.js" "storage/" "buildspec.yml" "docker/" "config.ru" "node_modules/")
+
+ ("/home/yelinaung/pw/moe-registry/app/" (24204 7634 740469 900000) "./" "../" "mailers/" "javascript/" "models/" "dashboards/" "controllers/" "helpers/" "assets/" "jobs/" "channels/" "views/")
+
+ ("/home/yelinaung/pw/moe-registry/app/models/" (24204 9127 140469 900000) "./" "../" "document.rb" "comment.rb" "application_record.rb" "concerns/" "user.rb")
+
+ ("/home/yelinaung/pw/moe-registry/app/api/" (24204 7216 790469 900000) "./" "../" "og_mail.rb")
+
+ ("/home/yelinaung/pw/moe-registry/app/javascript/" (24202 44019 770000 0) "./" "../" "controllers/" "packs/" "channels/")
+
+ ("/home/yelinaung/pw/moe-registry/app/controllers/" (24202 44445 250000 0) "./" "../" "application_controller.rb" "concerns/" "documents_controller.rb")
+
+ ("/home/yelinaung/pw/sspms/app/views/shared/" (24185 45562 918593 0) "./" "../" "_footer.html.erb" "_navbar.html.erb" "_notices.html.erb" "_grid_license.html.erb" "_head.html.erb")
+
+ ("/home/yelinaung/pw/cov19-border-cross/" (24185 32840 298593 0) "vendor/" "./" "log/" "../" "tmp/" ".browserslistrc" "public/" "bin/" "yarn.lock" "test/" "Rakefile" "app/" "Gemfile" "config/" ".ruby-version" "lib/" "postcss.config.js" "db/" "Gemfile.lock" ".git/" "README.md" "package.json" ".gitignore" "babel.config.js" "storage/" "config.ru" "node_modules/")
+
+ ("/home/yelinaung/pw/cov19-border-cross/config/" (24185 32941 138593 0) "./" "../" "locales/" "credentials.yml.enc" "environments/" "master.key" "puma.rb" "boot.rb" "initializers/" "application.rb" "storage.yml" "webpacker.yml" "database.yml" "cable.yml" "webpack/" "routes.rb" "environment.rb" "spring.rb")
+
+ ("/home/yelinaung/pw/cov19-border-cross/config/locales/" (24185 32805 828593 0) "./" "../" "en.yml" "devise.en.yml")
+
+ ("/home/yelinaung/pw/gadi/gadi-web/app/views/dashboard/creators/" (24178 10048 821510 600000) "./" "../" "grid.html.erb" "password_reset.html.erb" "import.html.erb" "group_percentage.html.erb" "show.html.erb" "index.html.erb")
+
+ ("/home/yelinaung/pw/sspms/db/seeds/" (24159 16353 910428 700000) "./" "c4m_schools.rb" "../" "rakhine_schools.rb" "old_students.rb" "old_schools.rb" "students.rb")
+
+ ("/home/yelinaung/pw/sspms/data/old/" (24159 5675 230428 700000) "MMR003005-Myawaddy.tsv" "./" "../" "pauktaw.tsv" "MMR010018-Taungthar.tsv" "MMR017024-Bogale.tsv" "MMR007001-Bago.tsv" "MMR017016-Labutta.tsv" "MMR017007-Kyaungkone.tsv" "MMR013008-Hlaingtharyar.tsv" "mmr010003-1719-REF.tsv" "minbya.tsv" "mmr013008-1719.tsv" "MMR010021-Nganzun.tsv" "MMR014001-Taunggyi.tsv" "c4m-schools.tsv" "MMR014010-Pekong.tsv" "mmr010003-1719.tsv" "mmr018008-1719.tsv" "schools.tsv")
+
+ ("/home/yelinaung/pw/sspms/data/" (24128 51806 230504 200000) "./" "minbya.tsv:Zone.Identifier" "../" "extract_students.sql" "pauktaw.tsv:Zone.Identifier" "old/" "townships.tsv" "scaffold.txt")
+
+ ("/home/yelinaung/pw/sspms/" (24159 7120 860428 700000) "vendor/" "Procfile" "./" "log/" "missing_schools.txt" "../" "tmp/" ".browserslistrc" "public/" "bin/" "yarn.lock" "test/" "Rakefile" "Procfile.dev" "app/" "erd.pdf" "db.sql/" "Gemfile" "config/" ".ruby-version" ".foreman" "lib/" "postcss.config.js" "db/" "Gemfile.lock" ".git/" "README.md" "docker-compose.yml" "package.json" ".log/" ".gitignore" "babel.config.js" "storage/" "sspms-data/" "data/" "config.ru" "package-lock.json" "node_modules/")
+
+ ("/home/yelinaung/pw/sspms/db/" (24151 36713 560316 900000) "./" "../" "seeds.rb" "schema.rb" "migrate/" "seeds/")
+
+ ("/home/yelinaung/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/administrate-field-nested_has_many-1.2.0/app/views/fields/nested_has_many/" (24145 17402 708845 0) "_show_current.html.erb" "_fields.html.erb" "./" "../" "_show_old.html.erb" "_form.html.erb" "_index.html.erb" "_show.html.erb")
 
  ("/home/yelinaung/pw/intro-to-CloudFormation_AC/02 CloudFormation Features/" (24125 41242 975523 400000) "./" "../" "2-MultipleResources.yaml" "1-IntrinsicFunctions.yaml" "6-Output.yaml" "5-InputParameters.yaml" "4-Mappings.yaml" "0-SimpleExample.yaml" "3-PseudoParameters.yaml")
 
@@ -42,8 +227,6 @@
  ("/home/yelinaung/pw/gadi/gadi-web/app/controllers/dashboard/" (24115 57595 798771 0) "./" "../" "invoices_controller.rb" "creators_controller.rb" "reports_controller.rb" "pricing_choose_track_controller.rb" "payment_controller.rb" "fanlink_controller.rb~" "pricings_controller.rb" "aggregators_controller.rb" "profile_controller.rb" "settlements_controller.rb" "creators/" "tracks_controller.rb" "main_pricings_controller.rb" "support_controller.rb" "taxes_controller.rb" "create_invoice_controller.rb" "albums_controller.rb" "invoice_receipts_controller.rb" "track_pricings_controller.rb" "partners_controller.rb" "songs_controller.rb" "green_forms_controller.rb" "admins_controller.rb" "fanlink_controller.rb")
 
  ("/home/yelinaung/pw/yrg-population-database/" (24114 33704 817792 900000) "vendor/" "./" "log/" "../" "clean.sh" "tmp/" "export.sql" "rest.http~" "test_export.txt" "voter_apps/" "migrations/" "public/" "bin/" "import.sql.erb" "test/" "Rakefile" "rest.http" "app/" "Gemfile" "config/" ".ruby-version" "lib/" "init.sql" "db/" "Gemfile.lock" ".git/" "text.log" "scaffold.txt" "README.md" "docker-compose.yml" "package.json" ".gitignore" "storage/" "data/" "import.sql" "config.ru")
-
- ("/home/yelinaung/pw/" (24112 25277 825661 100000) "./" "../" "mental/" "gadi/" "FiraCode-Regular-Symbol.otf" "popdb-analysis/" "pemas/" "yrg-population-database/" "sspms/" "FiraCode-Regular-Symbol(1).zip:Zone.Identifier" "id_rsa" "medical/" "id_rsa.pub")
 
  ("/home/yelinaung/pw/popdb-analysis/" (24112 32517 175661 100000) "./" "../" "readme.org~" "readme.html" "Gemfile~" "readme.org" "Gemfile" "readme.tex" "Gemfile.lock" ".git/" "index.rb" "utf-8-summary.csv" "Hlaingtharyar Database.zip" "databases/" "summary.csv")
 
