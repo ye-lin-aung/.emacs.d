@@ -1,13 +1,9 @@
-
-
 #+TITLE: Emacs configuration file
 #+AUTHOR: Ye Lin Aung
 
 * About
-
 This is my customized emacs configurations. I love to upgrade my tools every year. This is the exact same configurations that I am using for my development. Feel free to use or reference.
 Cheers ! 🍺
-
 
 ** Preferences
 #+BEGIN_SRC emacs-lisp
@@ -22,7 +18,6 @@ Installation of use-package
     (package-refresh-contents)
     (package-install 'use-package))
 #+END_SRC
-
 
 ** Dashboard
 [[https://github.com/emacs-dashboard/emacs-dashboard][Emacs dashboard]]
@@ -627,6 +622,4 @@ Swiper must be installed from git master since the melpa package is broken in em
      (width . 0.5)
      (left . 0.5)))))
 ;;(mini-frame-mode)
-
-
 #+END_SRC
