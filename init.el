@@ -61,6 +61,7 @@
      ("#3C3D37" . 100)))
  '(magit-diff-use-overlays nil)
  '(mini-frame-show-parameters '((top . 130) (width . 0.5) (left . 0.5)))
+ '(org-agenda-files '("~/.emacs.d/config.org"))
  '(package-selected-packages
    '(elixir-mode telega org-download helm-rg restclient highlight-parentheses avy yaml-mode yaml flycheck helm-ag ibuffer-vc multi-term helm-dash vimish-fold dumb-jump web-mode projectile-rails cider highlight-indent-guides docker sublimity magit switch-window ripgrep helm rg ag focus which-key company-web company auto-complete counsel-projectile undo-tree centaur-tabs org-bullets typo typo-mode olivetti poet-theme emojify use-package quelpa projectile dashboard all-the-icons))
  '(pos-tip-background-color "#FFFACE")
