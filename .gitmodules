@@ -1,6 +1,6 @@
 [submodule "vendor/swiper"]
 	path = vendor/swiper
-	url = https://github.com/abo-abo/swiper.git
+	url = git@github.com:abo-abo/swiper.git
 [submodule "vendor/snails"]
 	path = vendor/snails
 	url = https://github.com/manateelazycat/snails.git
@@ -15,4 +15,7 @@
 	url = https://github.com/nonsequitur/inf-ruby.git
 [submodule "vendor/ob-restclient"]
 	path = vendor/ob-restclient
-	url = https://github.com/alf/ob-restclient.el.git
+	url = git@github.com:alf/ob-restclient.el.git
+[submodule "vendor/restclient"]
+	path = vendor/restclient
+	url = git@github.com:pashky/restclient.el.git

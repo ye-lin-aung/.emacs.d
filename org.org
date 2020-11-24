@@ -1,26 +1,40 @@
-
+#+PROPERTY: header-args :tangle .emacs
 * Org mode configurations
 ** About
 My org related configurations sit here
 
-#+BEGIN_SRC emacs-lisp
-(add-to-list 'load-path "~/.emacs.d/vendor/ob-restclient/") 
+#+BEGIN_SRC emacs-lisp  :tangle tangle1.el :eval never
+
+(use-package restclient
+:defer t
+:load-path "~/.emacs.d/vendor/restclient/"
+)
+
+(use-package ob-restclient
+:defer t
+:load-path "~/.emacs.d/vendor/ob-restclient/"
+)
+
 (org-babel-do-load-languages
  'org-babel-load-languages (quote ((emacs-lisp . t)
                                     (sqlite . t)
 				    (sql .t)
                                     (R . t)
+				    (org .t)
 				    (restclient . t)
                                     (ruby . t)
                                     (python . t))))
 
 (use-package olivetti
+:defer t
   :ensure t)
 
 (use-package typo
+:defer t
   :ensure t)
 
 (use-package org-bullets
+:defer t
   :ensure t
   :config
   (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
@@ -44,6 +58,7 @@ My org related configurations sit here
 ;;)
 
 (use-package org-download
+:defer t
 :ensure t 
 :config
 (add-hook 'dired-mode-hook 'org-download-enable)

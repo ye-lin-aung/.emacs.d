@@ -1,8 +1,9 @@
+#+PROPERTY: header-args :tangle .emacs
 * My Emacs theme configurations
 ** About
 Things about my themes configurations 🎨
 
-#+BEGIN_SRC emacs-lisp
+#+BEGIN_SRC emacs-lisp :tangle tangle1.el :eval never
 (unless (package-installed-p 'gruvbox-theme)
     (package-refresh-contents)
     (package-install 'gruvbox-theme))
@@ -16,6 +17,7 @@ Things about my themes configurations 🎨
     (package-install 'nord-theme))
 
 (use-package doom-themes
+:defer t
   :ensure t
   :config
   ;; Global settings (defaults)
@@ -41,7 +43,7 @@ Things about my themes configurations 🎨
 ;; Or if you have use-package installed
 (use-package kaolin-themes
 :ensure t
-:config
+)
 (load-theme 'kaolin-light t)
-(kaolin-treemacs-theme))
+(kaolin-treemacs-theme)
 #+END_SRC

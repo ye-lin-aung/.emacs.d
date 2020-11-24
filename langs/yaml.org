@@ -1,8 +1,9 @@
+#+PROPERTY: header-args :tangle .emacs
 * Yaml Bindings
   
 ** YAML
 #+BEGIN_SRC emacs-lisp
-(use-package yaml-mode
+(use-package yaml-mode  :tangle tangle1.el :eval never
 :ensure t
 :config
    (add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
